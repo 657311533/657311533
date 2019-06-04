@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[wtf]]></title>
+    <title><![CDATA[写作时可能用到的命令]]></title>
     <url>%2F2019%2F06%2F04%2Ffirst%2F</url>
-    <content type="text"><![CDATA[12345layout: poststitle: 写给小白的express学习笔记1： express-static文件静态管理date: 2018-06-07 00:38:36categories: 学习笔记tags: [node.js, express] 以下为测试用图片]]></content>
+    <content type="text"><![CDATA[引用文件夹中的资源123&#123;% asset_path slug %&#125;&#123;% asset_img slug [title] %&#125;&#123;% asset_link slug [title] %&#125; slug为路径 title为说明]]></content>
       <categories>
-        <category>NO</category>
+        <category>Hexo的使用</category>
       </categories>
-      <tags>
-        <tag>sb</tag>
-      </tags>
   </entry>
   <entry>
     <title><![CDATA[Hello World]]></title>
