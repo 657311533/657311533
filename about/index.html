@@ -116,8 +116,6 @@
 <meta name="twitter:description" content="关于博主只是一条咸鱼，喜欢エロゲー(Galgame)，有空写一些感想和一些学习笔记 建立个人博客的原因原来是在新浪博客写文章，不幸被封，理由是发广告，然而并没有，这么小流量发什么广告，申诉无果，没得办法，辛辛苦苦写的文章没有备份，下次长记性了。 联系QQ:657311533百度id:_在家玩游戏网易云音乐id:_在家玩游戏 感谢建立个人博客的过程中查阅了大量的资料，感慨网络发达的同时，也很感激各位">
 
 
-  
-
 
   <link rel="alternate" href="/atom.xml" title="Dreht Sich" type="application/atom+xml">
 
@@ -446,6 +444,10 @@
 
           </div>
           
+
+  
+    <div class="comments" id="comments">
+    </div>
 
   
 
@@ -837,6 +839,36 @@
   
 
   
+  
+
+<script src="//cdn1.lncld.net/static/js/3.11.1/av-min.js"></script>
+
+
+
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+<script>
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#comments',
+    verify: false,
+    notify: false,
+    appId: 'lLJrcvUTvHuN23iBQcH1jAzh-gzGzoHsz',
+    appKey: 'IOK8OUXKpbSvmaS6Owpr1H5R',
+    placeholder: 'Just go go',
+    avatar: 'mm',
+    meta: guest,
+    pageSize: '10' || 10,
+    visitor: false,
+    lang: '' || 'zh-cn'
+  });
+</script>
+
+
 
 
   
