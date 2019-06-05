@@ -5,9 +5,9 @@
   <subtitle>Record</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://657311533.github.io/"/>
+  <link href="http://blog.drehtsich.tk/"/>
   <updated>2019-06-05T15:53:01.773Z</updated>
-  <id>http://657311533.github.io/</id>
+  <id>http://blog.drehtsich.tk/</id>
   
   <author>
     <name>_在家玩游戏</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>2016-Galgame音乐整理</title>
-    <link href="http://657311533.github.io/2019/06/05/2016-Galgame%E9%9F%B3%E4%B9%90%E6%95%B4%E7%90%86/"/>
-    <id>http://657311533.github.io/2019/06/05/2016-Galgame音乐整理/</id>
+    <link href="http://blog.drehtsich.tk/2019/06/05/2016-Galgame%E9%9F%B3%E4%B9%90%E6%95%B4%E7%90%86/"/>
+    <id>http://blog.drehtsich.tk/2019/06/05/2016-Galgame音乐整理/</id>
     <published>2019-06-05T15:31:18.000Z</published>
     <updated>2019-06-05T15:53:01.773Z</updated>
     
@@ -32,21 +32,21 @@
     
     </summary>
     
-      <category term="Galgame" scheme="http://657311533.github.io/categories/Galgame/"/>
+      <category term="Galgame" scheme="http://blog.drehtsich.tk/categories/Galgame/"/>
     
     
-      <category term="エロゲー" scheme="http://657311533.github.io/tags/%E3%82%A8%E3%83%AD%E3%82%B2%E3%83%BC/"/>
+      <category term="エロゲー" scheme="http://blog.drehtsich.tk/tags/%E3%82%A8%E3%83%AD%E3%82%B2%E3%83%BC/"/>
     
-      <category term="Galgame" scheme="http://657311533.github.io/tags/Galgame/"/>
+      <category term="Galgame" scheme="http://blog.drehtsich.tk/tags/Galgame/"/>
     
-      <category term="Music" scheme="http://657311533.github.io/tags/Music/"/>
+      <category term="Music" scheme="http://blog.drehtsich.tk/tags/Music/"/>
     
   </entry>
   
   <entry>
     <title>Hexo的建博客中遇到的问题及解决办法</title>
-    <link href="http://657311533.github.io/2019/06/05/Hexo%E7%9A%84%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/"/>
-    <id>http://657311533.github.io/2019/06/05/Hexo的建博客中遇到的问题及解决办法/</id>
+    <link href="http://blog.drehtsich.tk/2019/06/05/Hexo%E7%9A%84%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/"/>
+    <id>http://blog.drehtsich.tk/2019/06/05/Hexo的建博客中遇到的问题及解决办法/</id>
     <published>2019-06-05T13:44:47.000Z</published>
     <updated>2019-06-05T15:15:21.384Z</updated>
     
@@ -60,19 +60,19 @@
     
     </summary>
     
-      <category term="Hexo的使用" scheme="http://657311533.github.io/categories/Hexo%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
+      <category term="Hexo的使用" scheme="http://blog.drehtsich.tk/categories/Hexo%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
     
     
-      <category term="hexo" scheme="http://657311533.github.io/tags/hexo/"/>
+      <category term="hexo" scheme="http://blog.drehtsich.tk/tags/hexo/"/>
     
-      <category term="next" scheme="http://657311533.github.io/tags/next/"/>
+      <category term="next" scheme="http://blog.drehtsich.tk/tags/next/"/>
     
   </entry>
   
   <entry>
     <title>写作时可能用到的命令</title>
-    <link href="http://657311533.github.io/2019/06/05/%E5%86%99%E4%BD%9C%E6%97%B6%E5%8F%AF%E8%83%BD%E7%94%A8%E5%88%B0%E7%9A%84%E5%91%BD%E4%BB%A4/"/>
-    <id>http://657311533.github.io/2019/06/05/写作时可能用到的命令/</id>
+    <link href="http://blog.drehtsich.tk/2019/06/05/%E5%86%99%E4%BD%9C%E6%97%B6%E5%8F%AF%E8%83%BD%E7%94%A8%E5%88%B0%E7%9A%84%E5%91%BD%E4%BB%A4/"/>
+    <id>http://blog.drehtsich.tk/2019/06/05/写作时可能用到的命令/</id>
     <published>2019-06-04T17:51:25.000Z</published>
     <updated>2019-06-05T14:02:10.772Z</updated>
     
@@ -87,10 +87,10 @@
     
     </summary>
     
-      <category term="Hexo的使用" scheme="http://657311533.github.io/categories/Hexo%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
+      <category term="Hexo的使用" scheme="http://blog.drehtsich.tk/categories/Hexo%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
     
     
-      <category term="usage" scheme="http://657311533.github.io/tags/usage/"/>
+      <category term="usage" scheme="http://blog.drehtsich.tk/tags/usage/"/>
     
   </entry>
   
