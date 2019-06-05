@@ -3,10 +3,14 @@
   <entry>
     <title><![CDATA[Hexo的建博客中遇到的问题及解决办法]]></title>
     <url>%2F2019%2F06%2F05%2FHexo%E7%9A%84%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95%2F</url>
-    <content type="text"><![CDATA[hexo的搭建以及主题的选择hexo的搭建在网上有相当多的文章，这里就不重复叙述了。主题选择的是比较多人使用口碑也较好的NexT。 附:hexo官方文档:https://hexo.io/zh-cn/docs/ NexT主题:https://github.com/theme-next/hexo-theme-next]]></content>
+    <content type="text"><![CDATA[hexo的搭建以及主题的选择hexo的搭建在网上有相当多的文章，这里就不重复叙述了。主题选择的是比较多人使用口碑也较好的NexT。 附:hexo官方文档: https://hexo.io/zh-cn/docs/ NexT主题: https://github.com/theme-next/hexo-theme-next 文档和主题的github页面都有教程，需要一点英语基础。 域名的绑定免费域名申请: https://www.freenom.com/zh/index.html?lang=zh可能需要科学上网，该网站不好注册，但有谷歌账号可以直接登录 免费cdn推荐cloudflare: https://www.cloudflare.com/ 大概讲述一下流程从freenom中获得域名后填入从cloudflare中add site完毕后DNS→Cloudflare Nameservers 复制粘贴到freenom中Services→Manage Domain→Management Tools→Nameservers { asset_img freenom设置.png setting } 保存后在cloudflare中 DNS → DNS Records添加 自己的github page服务器 和 域名 { asset_img cloudflare设置1.png setting } { asset_img cloudflare设置2.png setting } 至此域名申请和解析完毕域名为 blog.(申请的域名) 例 blog.drehtsich.tk 附: github page服务器的查询:https://www.ipip.net/ip.html输入yourname.github.io 可得当前ip 博客域名的前缀取决于解析的 CNAME 中的设置 每次 hexo d 后都需要在github仓库设置域名?在hexo根目录下 /source/创建文件 CNAME 并写入 自己的域名 例 blog.drehtsich.tk hexo搭建后基本的操作next主题_config.yml 有关设置选项都有详细的说明，常见的设置有以下 对于刚搭建的应该在git中新建分类和标签页面 123hexo new page categorieshexo new page tags 然后可以在hexo根目录下的 /source 中找到categories和tags并在其中设置相应的md文件 新建 关于 页面 1hexo new page &quot;about&quot; 添加完毕可以去hexo目录下的_config.yml中搜索menu启用 还有其他的一些比如背景特效等，可从网上文章学习 添加插件中遇到的问题 利用leancloud添加文章阅读数 具体使用过程见于网上教程 问题: 主题_config.yml 中 leancloud_visitors: 下 1security: false 据说是 security 的插件用不了了，就算按照网上的设置了阅读数显示会异常，为了省事直接false了 利用不蒜子来显示也可，但在首页不显示阅读数不蒜子主要用来统计访客数和访问量，具体教程见网上]]></content>
       <categories>
         <category>Hexo的使用</category>
       </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>next</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[写作时可能用到的命令]]></title>
