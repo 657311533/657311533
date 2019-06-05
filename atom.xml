@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://657311533.github.io/"/>
-  <updated>2019-06-04T18:21:51.413Z</updated>
+  <updated>2019-06-05T14:09:28.029Z</updated>
   <id>http://657311533.github.io/</id>
   
   <author>
@@ -17,13 +17,36 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Hexo的建博客中遇到的问题及解决办法</title>
+    <link href="http://657311533.github.io/2019/06/05/Hexo%E7%9A%84%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/"/>
+    <id>http://657311533.github.io/2019/06/05/Hexo的建博客中遇到的问题及解决办法/</id>
+    <published>2019-06-05T13:44:47.000Z</published>
+    <updated>2019-06-05T14:09:28.029Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="hexo的搭建以及主题的选择"><a href="#hexo的搭建以及主题的选择" class="headerlink" title="hexo的搭建以及主题的选择"></a>hexo的搭建以及主题的选择</h2><p>hexo的搭建在网上有相当多的文章，这里就不重复叙述了。<br>主题选择的是比较多人使用口碑也较好的NexT。</p><p>附:<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">hexo官方文档</a>:<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/</a><br>   <a href="https://github.com/theme-next/hexo-theme-next" target="_blank" rel="noopener">NexT主题</a>:<a href="https://github.com/theme-next/hexo-theme-next" target="_blank" rel="noopener">https://github.com/theme-next/hexo-theme-next</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;hexo的搭建以及主题的选择&quot;&gt;&lt;a href=&quot;#hexo的搭建以及主题的选择&quot; class=&quot;headerlink&quot; title=&quot;hexo的搭建以及主题的选择&quot;&gt;&lt;/a&gt;hexo的搭建以及主题的选择&lt;/h2&gt;&lt;p&gt;hexo的搭建在网上有相当多的文章，这里就不
+      
+    
+    </summary>
+    
+      <category term="Hexo的使用" scheme="http://657311533.github.io/categories/Hexo%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>写作时可能用到的命令</title>
     <link href="http://657311533.github.io/2019/06/05/%E5%86%99%E4%BD%9C%E6%97%B6%E5%8F%AF%E8%83%BD%E7%94%A8%E5%88%B0%E7%9A%84%E5%91%BD%E4%BB%A4/"/>
     <id>http://657311533.github.io/2019/06/05/写作时可能用到的命令/</id>
     <published>2019-06-04T17:51:25.000Z</published>
-    <updated>2019-06-04T18:21:51.413Z</updated>
+    <updated>2019-06-05T14:02:10.772Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="引用文件夹中的资源"><a href="#引用文件夹中的资源" class="headerlink" title="引用文件夹中的资源"></a>引用文件夹中的资源</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% asset_path slug %&#125;</span><br><span class="line">&#123;% asset_img slug [title] %&#125;</span><br><span class="line">&#123;% asset_link slug [title] %&#125;</span><br></pre></td></tr></table></figure><p>slug为路径 title为说明</p><h1 id="使用以下指令限制首页显示文章摘要"><a href="#使用以下指令限制首页显示文章摘要" class="headerlink" title="使用以下指令限制首页显示文章摘要"></a>使用以下指令限制首页显示文章摘要</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- more --&gt;</span><br></pre></td></tr></table></figure><a id="more"></a><img src="/2019/06/05/写作时可能用到的命令/timg.jpg" title="This is an example image">]]></content>
+    <content type="html"><![CDATA[<h1 id="引用文件夹中的资源"><a href="#引用文件夹中的资源" class="headerlink" title="引用文件夹中的资源"></a>引用文件夹中的资源</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% asset_path slug %&#125;</span><br><span class="line">&#123;% asset_img slug [title] %&#125;</span><br><span class="line">&#123;% asset_link slug [title] %&#125;</span><br></pre></td></tr></table></figure><p>slug为路径 title为说明</p><h1 id="使用以下指令限制首页显示文章摘要"><a href="#使用以下指令限制首页显示文章摘要" class="headerlink" title="使用以下指令限制首页显示文章摘要"></a>使用以下指令限制首页显示文章摘要</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- more --&gt;</span><br></pre></td></tr></table></figure><a id="more"></a><h1 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% codeblock [title] [lang:language] [url] [link text] %&#125;</span><br><span class="line">code snippet</span><br><span class="line">&#123;% endcodeblock %&#125;</span><br></pre></td></tr></table></figure><p>或者使用markdown语法 ` *3</p><h1 id="文章插入iframe"><a href="#文章插入iframe" class="headerlink" title="文章插入iframe"></a>文章插入iframe</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% iframe url [width] [height] %&#125;</span><br></pre></td></tr></table></figure><h1 id="Link"><a href="#Link" class="headerlink" title="Link"></a>Link</h1><p>在文章中插入链接，并自动给外部链接添加 target=”_blank” 属性。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% link text url [external] [title] %&#125;</span><br></pre></td></tr></table></figure><img src="/2019/06/05/写作时可能用到的命令/timg.jpg" title="This is an example image">]]></content>
     
     <summary type="html">
     

@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Hexo的建博客中遇到的问题及解决办法]]></title>
+    <url>%2F2019%2F06%2F05%2FHexo%E7%9A%84%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95%2F</url>
+    <content type="text"><![CDATA[hexo的搭建以及主题的选择hexo的搭建在网上有相当多的文章，这里就不重复叙述了。主题选择的是比较多人使用口碑也较好的NexT。 附:hexo官方文档:https://hexo.io/zh-cn/docs/ NexT主题:https://github.com/theme-next/hexo-theme-next]]></content>
+      <categories>
+        <category>Hexo的使用</category>
+      </categories>
+  </entry>
+  <entry>
     <title><![CDATA[写作时可能用到的命令]]></title>
     <url>%2F2019%2F06%2F05%2F%E5%86%99%E4%BD%9C%E6%97%B6%E5%8F%AF%E8%83%BD%E7%94%A8%E5%88%B0%E7%9A%84%E5%91%BD%E4%BB%A4%2F</url>
-    <content type="text"><![CDATA[引用文件夹中的资源123&#123;% asset_path slug %&#125;&#123;% asset_img slug [title] %&#125;&#123;% asset_link slug [title] %&#125; slug为路径 title为说明 使用以下指令限制首页显示文章摘要1&lt;!-- more --&gt;]]></content>
+    <content type="text"><![CDATA[引用文件夹中的资源123&#123;% asset_path slug %&#125;&#123;% asset_img slug [title] %&#125;&#123;% asset_link slug [title] %&#125; slug为路径 title为说明 使用以下指令限制首页显示文章摘要1&lt;!-- more --&gt; 代码块123&#123;% codeblock [title] [lang:language] [url] [link text] %&#125;code snippet&#123;% endcodeblock %&#125; 或者使用markdown语法 ` *3 文章插入iframe1&#123;% iframe url [width] [height] %&#125; Link在文章中插入链接，并自动给外部链接添加 target=”_blank” 属性。 1&#123;% link text url [external] [title] %&#125;]]></content>
       <categories>
         <category>Hexo的使用</category>
       </categories>
