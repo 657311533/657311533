@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[kirikiri2引擎制作的gal的简单解包和封包]]></title>
     <url>%2F2019%2F06%2F20%2Fkirikiri2%E5%BC%95%E6%93%8E%E5%88%B6%E4%BD%9C%E7%9A%84gal%E7%9A%84%E7%AE%80%E5%8D%95%E8%A7%A3%E5%8C%85%E5%92%8C%E5%B0%81%E5%8C%85%2F</url>
-    <content type="text"><![CDATA[简介 关于kirikiri2 (吉里吉里2)kirikiri2 详情可见Wikipedia 最新版本是吉里吉里Z 主要用于 商用ADV 成品应用程序 可使用e-mote功能 kirikiri2在安卓和ios平台的运行贴吧: kirikiroid2置顶帖里有dalao:@new14shao发布的安卓和ios软件用于游戏运行于手机平台github发布页:https://github.com/zeas2/Kirikiroid2/releases使一部分PC上的黄油可运行在手机上 对于kirikiri2的解包封包的意义提取游戏其中的图片声音脚本的等资源，可用于汉化等工作。本文章中主要用于移植到手机上运行。由于源文件容量过大，且手机的处理能力不及PC所以对黄油进行解包然后压缩资源文件再封包可以减少手机的压力，加快游戏在手机上的运行速度。 关于解包工具个人推荐毛子的AE官网: http://wks.arai-kibou.ru/ae.php (AE 最后更新于 2017/04/05) 下载ae_20170405_nosrc.7z 支持除了吉里吉里引擎以外的很多黄油的解包和封包。]]></content>
+    <content type="text"><![CDATA[简介关于kirikiri2 (吉里吉里2)kirikiri2 详情可见Wikipedia 最新版本是吉里吉里Z 主要用于 商用ADV 成品应用程序 并支持e-mote功能 在黄油方面广泛应用 kirikiri2在安卓和ios平台的运行贴吧: kirikiroid2置顶帖里有dalao:@new14shao发布的安卓和ios软件用于游戏运行于手机平台github发布页:https://github.com/zeas2/Kirikiroid2/releases使一大部分PC上的黄油可运行在手机上 对于kirikiri2的解包封包的意义提取游戏其中的图片声音脚本的等资源，可用于汉化等工作。本文章中主要用于移植到手机上运行。由于源文件容量过大，且手机的处理能力不及PC所以对黄油进行解包然后压缩资源文件再封包可以减少手机的压力，加快游戏在手机上的运行速度。 关于解包封包工具个人推荐毛子的AE官网: http://wks.arai-kibou.ru/ae.php (AE 最后更新于 2017/04/05) 下载ae_20170405_nosrc.7z 支持除了吉里吉里引擎以外的很多黄油的解包和封包。]]></content>
       <categories>
         <category>Galgame</category>
       </categories>
