@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.drehtsich.tk/"/>
-  <updated>2019-06-20T09:26:31.402Z</updated>
+  <updated>2019-06-20T09:30:22.330Z</updated>
   <id>http://blog.drehtsich.tk/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://blog.drehtsich.tk/2019/06/20/kirikiri2%E5%BC%95%E6%93%8E%E5%88%B6%E4%BD%9C%E7%9A%84gal%E7%9A%84%E7%AE%80%E5%8D%95%E8%A7%A3%E5%8C%85%E5%92%8C%E5%B0%81%E5%8C%85/"/>
     <id>http://blog.drehtsich.tk/2019/06/20/kirikiri2引擎制作的gal的简单解包和封包/</id>
     <published>2019-06-20T08:42:22.000Z</published>
-    <updated>2019-06-20T09:26:31.402Z</updated>
+    <updated>2019-06-20T09:30:22.330Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><a id="more"></a><h2 id="关于kirikiri2-吉里吉里2"><a href="#关于kirikiri2-吉里吉里2" class="headerlink" title="关于kirikiri2 (吉里吉里2)"></a>关于kirikiri2 (吉里吉里2)</h2><p>kirikiri2 详情可见Wikipedia 最新版本是<a href="https://krkrz.github.io/" target="_blank" rel="noopener">吉里吉里Z</a></p><p>主要用于 商用ADV 成品应用程序 可使用<a href="https://emote.mtwo.co.jp/" target="_blank" rel="noopener">e-mote</a>功能</p><h3 id="kirikiri2在安卓和ios平台的运行"><a href="#kirikiri2在安卓和ios平台的运行" class="headerlink" title="kirikiri2在安卓和ios平台的运行"></a>kirikiri2在安卓和ios平台的运行</h3><p>贴吧: <a href="https://tieba.baidu.com/f?kw=kirikiroid2" target="_blank" rel="noopener">kirikiroid2</a><br>置顶帖里有dalao:@new14shao发布的安卓和ios软件用于游戏运行于手机平台<br>github发布页:<a href="https://github.com/zeas2/Kirikiroid2/releases" target="_blank" rel="noopener">https://github.com/zeas2/Kirikiroid2/releases</a><br>使一部分PC上的黄油可运行在手机上</p><h3 id="对于kirikiri2的解包封包的意义"><a href="#对于kirikiri2的解包封包的意义" class="headerlink" title="对于kirikiri2的解包封包的意义"></a>对于kirikiri2的解包封包的意义</h3><p>提取游戏其中的图片声音脚本的等资源，可用于汉化等工作。本文章中主要用于移植到手机上运行。<br>由于源文件容量过大，且手机的处理能力不及PC所以对黄油进行解包然后压缩资源文件再封包<br>可以减少手机的压力，加快游戏在手机上的运行速度。</p><h2 id="关于解包工具"><a href="#关于解包工具" class="headerlink" title="关于解包工具"></a>关于解包工具</h2><p>个人推荐毛子的AE<br>官网: <a href="http://wks.arai-kibou.ru/ae.php" target="_blank" rel="noopener">http://wks.arai-kibou.ru/ae.php</a> (AE 最后更新于 2017/04/05)</p><p><a href="/kirikiri2引擎制作的gal的简单解包和封包/ae_20170405_nosrc.7z">下载ae_20170405_nosrc.7z</a></p><p>支持除了吉里吉里引擎以外的很多黄油的解包和封包。</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><a id="more"></a><h2 id="关于kirikiri2-吉里吉里2"><a href="#关于kirikiri2-吉里吉里2" class="headerlink" title="关于kirikiri2 (吉里吉里2)"></a>关于kirikiri2 (吉里吉里2)</h2><p>kirikiri2 详情可见Wikipedia 最新版本是<a href="https://krkrz.github.io/" target="_blank" rel="noopener">吉里吉里Z</a></p><p>主要用于 商用ADV 成品应用程序 可使用<a href="https://emote.mtwo.co.jp/" target="_blank" rel="noopener">e-mote</a>功能</p><h3 id="kirikiri2在安卓和ios平台的运行"><a href="#kirikiri2在安卓和ios平台的运行" class="headerlink" title="kirikiri2在安卓和ios平台的运行"></a>kirikiri2在安卓和ios平台的运行</h3><p>贴吧: <a href="https://tieba.baidu.com/f?kw=kirikiroid2" target="_blank" rel="noopener">kirikiroid2</a><br>置顶帖里有dalao:@new14shao发布的安卓和ios软件用于游戏运行于手机平台<br>github发布页:<a href="https://github.com/zeas2/Kirikiroid2/releases" target="_blank" rel="noopener">https://github.com/zeas2/Kirikiroid2/releases</a><br>使一部分PC上的黄油可运行在手机上</p><h3 id="对于kirikiri2的解包封包的意义"><a href="#对于kirikiri2的解包封包的意义" class="headerlink" title="对于kirikiri2的解包封包的意义"></a>对于kirikiri2的解包封包的意义</h3><p>提取游戏其中的图片声音脚本的等资源，可用于汉化等工作。本文章中主要用于移植到手机上运行。<br>由于源文件容量过大，且手机的处理能力不及PC所以对黄油进行解包然后压缩资源文件再封包<br>可以减少手机的压力，加快游戏在手机上的运行速度。</p><h2 id="关于解包工具"><a href="#关于解包工具" class="headerlink" title="关于解包工具"></a>关于解包工具</h2><p>个人推荐毛子的AE<br>官网: <a href="http://wks.arai-kibou.ru/ae.php" target="_blank" rel="noopener">http://wks.arai-kibou.ru/ae.php</a> (AE 最后更新于 2017/04/05)</p><p><a href="https://github.com/657311533/657311533.github.io/raw/master/2019/06/20/kirikiri2%E5%BC%95%E6%93%8E%E5%88%B6%E4%BD%9C%E7%9A%84gal%E7%9A%84%E7%AE%80%E5%8D%95%E8%A7%A3%E5%8C%85%E5%92%8C%E5%B0%81%E5%8C%85/ae_20170405_nosrc.7z" target="_blank" rel="noopener">下载ae_20170405_nosrc.7z</a></p><p>支持除了吉里吉里引擎以外的很多黄油的解包和封包。</p>]]></content>
     
     <summary type="html">
     
