@@ -96,7 +96,7 @@
   <entry>
     <title><![CDATA[写作时可能用到的命令]]></title>
     <url>%2F2019%2F06%2F05%2F%E5%86%99%E4%BD%9C%E6%97%B6%E5%8F%AF%E8%83%BD%E7%94%A8%E5%88%B0%E7%9A%84%E5%91%BD%E4%BB%A4%2F</url>
-    <content type="text"><![CDATA[引用文件夹中的资源123&#123;% asset_path slug %&#125;&#123;% asset_img slug [title] %&#125;&#123;% asset_link slug [title] %&#125; slug为路径 title为说明 使用以下指令限制首页显示文章摘要1&lt;!-- more --&gt; 代码块123&#123;% codeblock [title] [lang:language] [url] [link text] %&#125;code snippet&#123;% endcodeblock %&#125; 或者使用markdown语法 ` *3 文章插入iframe1&#123;% iframe url [width] [height] %&#125; Link在文章中插入链接，并自动给外部链接添加 target=”_blank” 属性。 1&#123;% link text url [external] [title] %&#125;]]></content>
+    <content type="text"><![CDATA[引用文件夹中的资源123&#123;% asset_path slug %&#125;&#123;% asset_img slug [title] %&#125;&#123;% asset_link slug [title] %&#125; slug为路径 title为说明 使用以下指令限制首页显示文章摘要1&lt;!-- more --&gt; 代码块123&#123;% codeblock [title] [lang:language] [url] [link text] %&#125;code snippet&#123;% endcodeblock %&#125; 或者使用markdown语法 ` *3 文章插入iframe1&#123;% iframe url [width] [height] %&#125; Link在文章中插入链接，并自动给外部链接添加 target=”_blank” 属性。 1&#123;% link text url [external] [title] %&#125; 字体颜色1$\color&#123;red&#125;\text&#123;我不知道&#125;$ 预览： $\color{red}\text{我不知道}$]]></content>
       <categories>
         <category>Hexo的使用</category>
       </categories>
