@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.drehtsich.tk/"/>
-  <updated>2019-06-30T15:22:34.276Z</updated>
+  <updated>2019-06-30T15:43:35.169Z</updated>
   <id>http://blog.drehtsich.tk/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>实用工具合集</title>
+    <link href="http://blog.drehtsich.tk/2019/06/30/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7%E5%90%88%E9%9B%86/"/>
+    <id>http://blog.drehtsich.tk/2019/06/30/实用工具合集/</id>
+    <published>2019-06-30T15:38:20.000Z</published>
+    <updated>2019-06-30T15:43:35.169Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>工具包括 下载、办公、计算机技术等方面的</p><a id="more"></a><p>百度云下载工具: <a href="http://pandownload.com/" target="_blank" rel="noopener">http://pandownload.com/</a><br>使用以上工具登录百度云即可无限速，还能直接提取链接下载，很方便</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h1&gt;&lt;p&gt;工具包括 下载、办公、计算机技术等方面的&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Tools" scheme="http://blog.drehtsich.tk/categories/Tools/"/>
+    
+    
+      <category term="tool" scheme="http://blog.drehtsich.tk/tags/tool/"/>
+    
+      <category term="工具" scheme="http://blog.drehtsich.tk/tags/%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
   
   <entry>
     <title>个人评测.箱庭ロジック</title>
