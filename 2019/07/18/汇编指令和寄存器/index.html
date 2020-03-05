@@ -118,7 +118,7 @@
 <meta property="og:description" content="寄存器(32位)">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://blog.drehtsich.tk/2019/07/18/汇编指令和寄存器/Program_Status_Word.png">
-<meta property="og:updated_time" content="2019-07-18T13:38:51.875Z">
+<meta property="og:updated_time" content="2020-03-05T14:42:58.989Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="汇编指令和寄存器">
 <meta name="twitter:description" content="寄存器(32位)">
@@ -432,12 +432,24 @@
                 
               
 
-              <time title="创建时间：2019-07-18 21:00:22 / 修改时间：21:38:51" itemprop="dateCreated datePublished" datetime="2019-07-18T21:00:22+08:00">2019-07-18</time>
+              <time title="创建时间：2019-07-18 21:00:22" itemprop="dateCreated datePublished" datetime="2019-07-18T21:00:22+08:00">2019-07-18</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2020-03-05 22:42:58" itemprop="dateModified" datetime="2020-03-05T22:42:58+08:00">2020-03-05</time>
               
             
           </span>
@@ -507,7 +519,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">8.9k</span>
+                <span title="本文字数">9.5k</span>
               
 
               
@@ -521,7 +533,7 @@
                 
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
-                <span title="Reading time">16 mins.</span>
+                <span title="Reading time">17 mins.</span>
               
             </div>
           
@@ -580,6 +592,7 @@
 <p>PUSH,POP<br>功能: 把操作数压入或取出堆栈<br>语法: PUSH 操作数 POP 操作数<br>格式: PUSH r PUSH M PUSH data POP r POP m</p>
 <p>PUSHF,POPF,PUSHA,POPA<br>功能: 堆栈指令群<br>格式: PUSHF POPF PUSHA POPA</p>
 <p>LEA,LDS,LES<br>功能: 取地址至寄存器<br>语法: LEA r,m LDS r,m LES r,m</p>
+<p>LEA (Load effective address)取有效地址，也就是取偏移地址。<br>指令格式：LEA 目的，源<br>指令功能：取源操作数 地址的偏移量，并把它传送到目的操作数所在的单元</p>
 <p>XLAT(XLATB)<br>功能: 查表指令<br>语法: XLAT XLAT m</p>
 <h2 id="算数运算指令"><a href="#算数运算指令" class="headerlink" title="算数运算指令"></a>算数运算指令</h2><p>ADD,ADC<br>功能: 加法指令<br>语法: ADD OP1,OP2 ADC OP1,OP2<br>格式: ADD r1,r2 ADD r,m ADD m,r ADD r,data<br>影响标志: C,P,A,Z,S,O</p>
 <p>SUB,SBB<br>功能:减法指令<br>语法: SUB OP1,OP2 SBB OP1,OP2<br>格式: SUB r1,r2 SUB r,m SUB m,r SUB r,data SUB m,data<br>影响标志: C,P,A,Z,S,O</p>
@@ -593,11 +606,14 @@
 <h2 id="位运算指令集"><a href="#位运算指令集" class="headerlink" title="位运算指令集"></a>位运算指令集</h2><p>AND,OR,XOR,NOT,TEST<br>功能: 执行BIT与BIT之间的逻辑运算<br>语法: AND r/m,r/m/data OR r/m,r/m/data XOR r/m,r/m/data TEST r/m,r/m/data NOT r/m<br>影响标志: C,O,P,Z,S(其中C与O两个标志会被设为0) NOT指令不影响任何标志位</p>
 <p>SHR,SHL,SAR,SAL<br>功能: 移位指令<br>语法: SHR r/m,data/CL SHL r/m,data/CL SAR r/m,data/CL SAL r/m,data/CL<br>影响标志: C,P,Z,S,O</p>
 <p>ROR,ROL,RCR,RCL<br>功能: 循环移位指令<br>语法: ROR r/m,data/CL ROL r/m,data/CL RCR r/m,data/CL RCL r/m,data/CL<br>影响标志: C,P,Z,S,O<br>程序流程控制指令集</p>
+<p>XOR 异或运算(exclusive OR)<br>运算法则为： a⊕b = (¬a ∧ b) ∨ (a ∧¬b)<br>如果a、b两个值不相同，则异或结果为1。如果a、b两个值相同，异或结果为0。、<br>异或自身可使自身清零</p>
+<p>OR 或运算<br>运算法则：<br>0 || 0 = 0;<br>1 || 0 = 1;<br>0 || 1 = 1;<br>1 || 1 = 1;<br>可以让指定二进制的位强制为1</p>
+<p>AND 与运算<br>运算法则：<br>0&amp;0=0;<br>0&amp;1=0;<br>1&amp;0=0;<br>1&amp;1=1;<br>可以让指定二进制的位强制为0</p>
 <p>CLC,STC,CMC<br>功能: 设定进位标志<br>语法: CLC STC CMC<br>标志位: C</p>
 <p>CLD,STD<br>功能: 设定方向标志<br>语法: CLD STD<br>标志位: D</p>
 <p>CLI,STI<br>功能: 设定中断标志<br>语法: CLI STI<br>标志位: I</p>
-<p>CMP<br>功能: 比较OP1与OP2的值<br>语法: CMP r/m,r/m/data<br>标志位: C,P,A,Z,O</p>
-<p>JMP<br>功能: 跳往指定地址执行<br>语法: JMP 地址</p>
+<p>CMP<br>功能: 比较OP1与OP2的值<br>语法: CMP r/m,r/m/data<br>标志位: C,P,A,Z,O<br>不改变 比较的值<br>只改变 标志寄存器<br>ZF=1则AX=BX<br>ZF=0则AX！=BX<br>SF=1则AX<bx sf="0则AX">=BX<br>SF=0并ZF=0则AX&gt;BX<br>SF=1或ZF=1则AX&lt;=BX</bx></p>
+<p>JMP<br>功能: 跳往指定地址执行<br>语法: JMP 地址<br>JMP 1000H   段内直接转移，转移地址的偏移量由指令给出<br>JMP CX  段内间接转移，转移地址的偏移量由CX指出<br>JMP 1000H:2000H 段间直接转移，段码和偏移量由指令给出<br>JMP DWORD PTR [SI]  段间间接转移转移地址在SI所指地址开始的4个单元中</p>
 <p>JXX<br>功能: 当特定条件成立则跳往指定地址执行<br>语法: JXX 地址<br>注:<br>A: ABOVE,当C=0,Z=0时成立<br>B: BELOW,当C=1时成立<br>C: CARRY,当弁时成立 CXZ: CX寄存器的值为0(ZERO)时成立<br>E: EQUAL,当Z=1时成立<br>G: GREATER(大于),当Z=0且S=0时成立<br>L: LESS(小于),当S不为零时成立<br>N: NOT(相反条件),需和其它符号配合使用<br>O: OVERFLOW,O=1时成立<br>P: PARITY,P=1时成立<br>PE: PARITY EVEN,P=1时成立<br>PO: PARITY ODD,P=0时成立<br>S: SIGN,S=1时成立<br>Z: ZERO,Z=1时成立</p>
 <p>LOOP<br>功能: 循环指令集<br>语法: LOOP 地址</p>
 <p>LOOPE(Z)<br>地址 LOOPNE(Z) 地址<br>标志位: 无</p>
@@ -973,7 +989,7 @@
     
       <span class="post-meta-item-text">Symbols count total：</span>
     
-    <span title="Symbols count total">71k</span>
+    <span title="Symbols count total">72k</span>
   
 
   
@@ -984,7 +1000,7 @@
     
       <span class="post-meta-item-text">Reading time total &asymp;</span>
     
-    <span title="Reading time total">2:09</span>
+    <span title="Reading time total">2:11</span>
   
 </div>
 
