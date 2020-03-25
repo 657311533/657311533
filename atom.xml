@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.drehtsich.tk/"/>
-  <updated>2020-03-25T19:50:15.992Z</updated>
+  <updated>2020-03-25T20:52:15.476Z</updated>
   <id>http://blog.drehtsich.tk/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://blog.drehtsich.tk/2020/03/25/Virtual%20Private%20Network/"/>
     <id>http://blog.drehtsich.tk/2020/03/25/Virtual Private Network/</id>
     <published>2020-03-25T09:41:31.000Z</published>
-    <updated>2020-03-25T19:50:15.992Z</updated>
+    <updated>2020-03-25T20:52:15.476Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="简要"><a href="#简要" class="headerlink" title="简要"></a>简要</h1><p>鉴于ssr等，日益减速甚至断线情况经常发生,ss显然已经快要淘汰。</p><p>为了更好的翻墙体验，和更安全的访问，利用V2ray来伪装流量为http的访问流量<br>比原先的ss的加密流量更难被察觉。<br>重新部署是合乎理由的。</p><a id="more"></a><h1 id="客户端下载"><a href="#客户端下载" class="headerlink" title="客户端下载"></a>客户端下载</h1><h2 id="Windows客户端"><a href="#Windows客户端" class="headerlink" title="Windows客户端"></a>Windows客户端</h2><p>Windows客户端 v2rayN 官网下载: <a href="https://github.com/2dust/v2rayN/releases" target="_blank" rel="noopener">https://github.com/2dust/v2rayN/releases</a><br><a href="https://blog.drehtsich.tk/2020/03/25/Virtual%20Private%20Network/v2rayN-Core.zip">Windows客户端3.12(本地源)</a></p><p>可使用 复制URL到剪贴板 的方法来快速设置。</p><h2 id="Android客户端"><a href="#Android客户端" class="headerlink" title="Android客户端"></a>Android客户端</h2><p>Android客户端 v2rayNG 可从谷歌商店下载<br><a href="https://blog.drehtsich.tk/2020/03/25/Virtual%20Private%20Network/com.v2ray.ang.apk">Android客户端(本地源)</a></p><p>可使用 复制URL到剪贴板 的方法来快速设置。</p><h2 id="IOS客户端"><a href="#IOS客户端" class="headerlink" title="IOS客户端"></a>IOS客户端</h2><p>V2Ray iOS (iPhone / iPad) 客户端有<br>Shadowrocket(小火箭)、Kitsunebi 和 Quantumult 三种，<br>目前国区 App Store 的 iOS 客户端都下架了，<br>所以你如果需要下载 V2Ray iOS (iPhone / iPad) 客户端，<br>有以下 3 种解决方案：</p><p>下载 ipa 文件，利用 PP 助手 导入到手机（无需越狱）<br>注册美区或者港区的 Apple ID，下载指定 iOS 客户端<br>去某宝购买，之后切换 Apple ID，下载 iOS 客户端</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="简要"><a href="#简要" class="headerlink" title="简要"></a>简要</h1><p>鉴于ssr等，日益减速甚至断线情况经常发生,ss显然已经快要淘汰。</p><p>为了更好的翻墙体验，和更安全的访问，利用V2ray来伪装流量为http的访问流量<br>比原先的ss的加密流量更难被察觉。<br>重新部署是合乎理由的。</p><a id="more"></a><h1 id="客户端下载"><a href="#客户端下载" class="headerlink" title="客户端下载"></a>客户端下载</h1><h2 id="Windows客户端"><a href="#Windows客户端" class="headerlink" title="Windows客户端"></a>Windows客户端</h2><p>Windows客户端 v2rayN 官网下载: <a href="https://github.com/2dust/v2rayN/releases" target="_blank" rel="noopener">https://github.com/2dust/v2rayN/releases</a></p><p>Windows客户端3.12(本地下载): <a href="https://blog.drehtsich.tk/2020/03/25/Virtual%20Private%20Network/v2rayN-Core.zip">点击下载</a></p><p>可使用 复制URL到剪贴板 的方法来快速设置。</p><h2 id="Android客户端"><a href="#Android客户端" class="headerlink" title="Android客户端"></a>Android客户端</h2><p>Android客户端 v2rayNG 可从谷歌商店下载</p><p>Android客户端(本地下载): <a href="https://blog.drehtsich.tk/2020/03/25/Virtual%20Private%20Network/com.v2ray.ang.apk">点击下载</a></p><p>可使用 复制URL到剪贴板 的方法来快速设置。</p><h2 id="IOS客户端"><a href="#IOS客户端" class="headerlink" title="IOS客户端"></a>IOS客户端</h2><p>V2Ray iOS (iPhone / iPad) 客户端有<br>Shadowrocket(小火箭)、Kitsunebi 和 Quantumult 三种，<br>目前国区 App Store 的 iOS 客户端都下架了，<br>所以你如果需要下载 V2Ray iOS (iPhone / iPad) 客户端，<br>有以下 3 种解决方案：</p><p>下载 ipa 文件，利用 PP 助手 导入到手机（无需越狱）<br>注册美区或者港区的 Apple ID，下载指定 iOS 客户端<br>去某宝购买，之后切换 Apple ID，下载 iOS 客户端</p>]]></content>
     
     <summary type="html">
     
