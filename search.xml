@@ -2,16 +2,8 @@
 <search>
   <entry>
     <title><![CDATA[Virtual Private Network]]></title>
-    <url>%2F2020%2F03%2F25%2Fss%2F</url>
-    <content type="text"><![CDATA[简要鉴于ssr等，日益减速甚至断线情况经常发生,ss显然已经快要淘汰。 为了更好的翻墙体验，和更安全的访问，利用V2ray来伪装流量为http的访问流量比原先的ss的加密流量更难被察觉。 客户端下载Windows客户端Windows客户端 v2rayN 官网下载: https://github.com/2dust/v2rayN/releasesWindows客户端3.12(本地源) 可使用 复制URL到剪贴板 的方法来快速设置。 Android客户端Android客户端 v2rayNG 可从谷歌商店下载Android客户端(本地源) 可使用 复制URL到剪贴板 的方法来快速设置。 IOS客户端V2Ray iOS (iPhone / iPad) 客户端有Shadowrocket(小火箭)、Kitsunebi 和 Quantumult 三种，目前国区 App Store 的 iOS 客户端都下架了，所以你如果需要下载 V2Ray iOS (iPhone / iPad) 客户端，有以下 3 种解决方案： 下载 ipa 文件，利用 PP 助手 导入到手机（无需越狱）注册美区或者港区的 Apple ID，下载指定 iOS 客户端去某宝购买，之后切换 Apple ID，下载 iOS 客户端]]></content>
-      <categories>
-        <category>Proxy</category>
-      </categories>
-  </entry>
-  <entry>
-    <title><![CDATA[Virtual Private Network]]></title>
     <url>%2F2020%2F03%2F25%2FVirtual%20Private%20Network%2F</url>
-    <content type="text"><![CDATA[简要鉴于ssr等，日益减速甚至断线情况经常发生,ss显然已经快要淘汰。 为了更好的翻墙体验，和更安全的访问，利用V2ray来伪装流量为http的访问流量比原先的ss的加密流量更难被察觉。 客户端下载Windows客户端Windows客户端 v2rayN 官网下载: https://github.com/2dust/v2rayN/releasesWindows客户端3.12(本地源) Android客户端Android客户端 v2rayNG 可从谷歌商店下载Android客户端(本地源) IOS客户端V2Ray iOS (iPhone / iPad) 客户端有Shadowrocket(小火箭)、Kitsunebi 和 Quantumult 三种，目前国区 App Store 的 iOS 客户端都下架了，所以你如果需要下载 V2Ray iOS (iPhone / iPad) 客户端，有以下 3 种解决方案： 下载 ipa 文件，利用 PP 助手 导入到手机（无需越狱）注册美区或者港区的 Apple ID，下载指定 iOS 客户端去某宝购买，之后切换 Apple ID，下载 iOS 客户端]]></content>
+    <content type="text"><![CDATA[简要鉴于ssr等，日益减速甚至断线情况经常发生,ss显然已经快要淘汰。 为了更好的翻墙体验，和更安全的访问，利用V2ray来伪装流量为http的访问流量比原先的ss的加密流量更难被察觉。 客户端下载Windows客户端Windows客户端 v2rayN 官网下载: https://github.com/2dust/v2rayN/releasesWindows客户端3.12(本地源) 可使用 复制URL到剪贴板 的方法来快速设置。 Android客户端Android客户端 v2rayNG 可从谷歌商店下载Android客户端(本地源) 可使用 复制URL到剪贴板 的方法来快速设置。 IOS客户端V2Ray iOS (iPhone / iPad) 客户端有Shadowrocket(小火箭)、Kitsunebi 和 Quantumult 三种，目前国区 App Store 的 iOS 客户端都下架了，所以你如果需要下载 V2Ray iOS (iPhone / iPad) 客户端，有以下 3 种解决方案： 下载 ipa 文件，利用 PP 助手 导入到手机（无需越狱）注册美区或者港区的 Apple ID，下载指定 iOS 客户端去某宝购买，之后切换 Apple ID，下载 iOS 客户端]]></content>
       <categories>
         <category>Proxy</category>
       </categories>
