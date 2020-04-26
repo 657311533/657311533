@@ -5,9 +5,9 @@
   <subtitle>Record</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://blog.drehtsich.tk/"/>
-  <updated>2020-03-25T20:52:15.476Z</updated>
-  <id>http://blog.drehtsich.tk/</id>
+  <link href="https://blog.drehtsich.tk/"/>
+  <updated>2020-04-26T09:06:52.643Z</updated>
+  <id>https://blog.drehtsich.tk/</id>
   
   <author>
     <name>_在家玩游戏</name>
@@ -17,9 +17,32 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>学习笔记</title>
+    <link href="https://blog.drehtsich.tk/2020/04/26/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>https://blog.drehtsich.tk/2020/04/26/学习笔记/</id>
+    <published>2020-04-26T08:37:08.000Z</published>
+    <updated>2020-04-26T09:06:52.643Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="C-C"><a href="#C-C" class="headerlink" title="C/C++"></a>C/C++</h1><h2 id="指针"><a href="#指针" class="headerlink" title="指针"></a>指针</h2><p>数组指针 和 普通的类型指针的区别</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">int arr[3][3] = &#123; &#123; 1,2,3 &#125;,&#123;4,5,6&#125;,&#123;7,8,9&#125; &#125;;</span><br><span class="line"></span><br><span class="line">//从汇编代码的角度看数组指针的执行和普通指针无异</span><br><span class="line">//但声明方式必须按照C的语法</span><br><span class="line">int* arrpoint = arr[0];</span><br><span class="line">int(*ap1)[3][3] = &amp;arr; </span><br><span class="line"></span><br><span class="line">//打印输出的值均为 5</span><br><span class="line">printf(&quot;%d %d&quot;, *(ap + 3*1 +1), ((*ap1)+1)[0][1]); </span><br><span class="line"></span><br><span class="line">//函数指针</span><br><span class="line">int _cdecl Plus(int a,int b)</span><br><span class="line">&#123;</span><br><span class="line">    return a+b;</span><br><span class="line">&#125;</span><br><span class="line">//声明一个函数指针指向上面的函数PLus</span><br><span class="line">int (_cdecl *FunctionPointer)(int,int) = Plus;</span><br><span class="line">//指针函数被调用时按照调用约定来进行参数压栈和平衡堆栈</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure><h2 id="调用约定"><a href="#调用约定" class="headerlink" title="调用约定"></a>调用约定</h2><p>参数传递顺序<br>1.从右到左依次入栈：<strong>stdcall，</strong>cdecl，<strong>thiscall，</strong>fastcall<br>2.从左到右依次入栈：__pascal</p><p>函数内平衡堆栈(自己平衡): __stdcall, __fastcall, __thiscall<br>函数外平衡堆栈(返回后平衡): __cdecl</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;C-C&quot;&gt;&lt;a href=&quot;#C-C&quot; class=&quot;headerlink&quot; title=&quot;C/C++&quot;&gt;&lt;/a&gt;C/C++&lt;/h1&gt;&lt;h2 id=&quot;指针&quot;&gt;&lt;a href=&quot;#指针&quot; class=&quot;headerlink&quot; title=&quot;指针&quot;&gt;&lt;/a&gt;指针&lt;/h
+      
+    
+    </summary>
+    
+      <category term="学习" scheme="https://blog.drehtsich.tk/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Virtual Private Network</title>
-    <link href="http://blog.drehtsich.tk/2020/03/25/Virtual%20Private%20Network/"/>
-    <id>http://blog.drehtsich.tk/2020/03/25/Virtual Private Network/</id>
+    <link href="https://blog.drehtsich.tk/2020/03/25/Virtual%20Private%20Network/"/>
+    <id>https://blog.drehtsich.tk/2020/03/25/Virtual Private Network/</id>
     <published>2020-03-25T09:41:31.000Z</published>
     <updated>2020-03-25T20:52:15.476Z</updated>
     
@@ -32,15 +55,15 @@
     
     </summary>
     
-      <category term="Proxy" scheme="http://blog.drehtsich.tk/categories/Proxy/"/>
+      <category term="Proxy" scheme="https://blog.drehtsich.tk/categories/Proxy/"/>
     
     
   </entry>
   
   <entry>
     <title>2018-Galgame音乐整理</title>
-    <link href="http://blog.drehtsich.tk/2020/01/15/2018-Galgame%E9%9F%B3%E4%B9%90%E6%95%B4%E7%90%86/"/>
-    <id>http://blog.drehtsich.tk/2020/01/15/2018-Galgame音乐整理/</id>
+    <link href="https://blog.drehtsich.tk/2020/01/15/2018-Galgame%E9%9F%B3%E4%B9%90%E6%95%B4%E7%90%86/"/>
+    <id>https://blog.drehtsich.tk/2020/01/15/2018-Galgame音乐整理/</id>
     <published>2020-01-15T08:42:26.000Z</published>
     <updated>2020-02-21T10:21:48.965Z</updated>
     
@@ -53,21 +76,21 @@
     
     </summary>
     
-      <category term="Galgame" scheme="http://blog.drehtsich.tk/categories/Galgame/"/>
+      <category term="Galgame" scheme="https://blog.drehtsich.tk/categories/Galgame/"/>
     
     
-      <category term="エロゲー" scheme="http://blog.drehtsich.tk/tags/%E3%82%A8%E3%83%AD%E3%82%B2%E3%83%BC/"/>
+      <category term="エロゲー" scheme="https://blog.drehtsich.tk/tags/%E3%82%A8%E3%83%AD%E3%82%B2%E3%83%BC/"/>
     
-      <category term="Galgame" scheme="http://blog.drehtsich.tk/tags/Galgame/"/>
+      <category term="Galgame" scheme="https://blog.drehtsich.tk/tags/Galgame/"/>
     
-      <category term="Music" scheme="http://blog.drehtsich.tk/tags/Music/"/>
+      <category term="Music" scheme="https://blog.drehtsich.tk/tags/Music/"/>
     
   </entry>
   
   <entry>
     <title>沉思录摘抄</title>
-    <link href="http://blog.drehtsich.tk/2019/12/01/%E6%B2%89%E6%80%9D%E5%BD%95%E6%91%98%E6%8A%84/"/>
-    <id>http://blog.drehtsich.tk/2019/12/01/沉思录摘抄/</id>
+    <link href="https://blog.drehtsich.tk/2019/12/01/%E6%B2%89%E6%80%9D%E5%BD%95%E6%91%98%E6%8A%84/"/>
+    <id>https://blog.drehtsich.tk/2019/12/01/沉思录摘抄/</id>
     <published>2019-12-01T15:02:00.000Z</published>
     <updated>2019-12-07T12:00:02.328Z</updated>
     
@@ -79,17 +102,17 @@
     
     </summary>
     
-      <category term="Book" scheme="http://blog.drehtsich.tk/categories/Book/"/>
+      <category term="Book" scheme="https://blog.drehtsich.tk/categories/Book/"/>
     
     
-      <category term="读书笔记" scheme="http://blog.drehtsich.tk/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+      <category term="读书笔记" scheme="https://blog.drehtsich.tk/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
   <entry>
     <title>西方哲学史</title>
-    <link href="http://blog.drehtsich.tk/2019/12/01/%E8%A5%BF%E6%96%B9%E5%93%B2%E5%AD%A6%E5%8F%B2/"/>
-    <id>http://blog.drehtsich.tk/2019/12/01/西方哲学史/</id>
+    <link href="https://blog.drehtsich.tk/2019/12/01/%E8%A5%BF%E6%96%B9%E5%93%B2%E5%AD%A6%E5%8F%B2/"/>
+    <id>https://blog.drehtsich.tk/2019/12/01/西方哲学史/</id>
     <published>2019-11-30T16:49:38.000Z</published>
     <updated>2020-02-14T10:29:54.563Z</updated>
     
@@ -101,17 +124,17 @@
     
     </summary>
     
-      <category term="Book" scheme="http://blog.drehtsich.tk/categories/Book/"/>
+      <category term="Book" scheme="https://blog.drehtsich.tk/categories/Book/"/>
     
     
-      <category term="读书笔记" scheme="http://blog.drehtsich.tk/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+      <category term="读书笔记" scheme="https://blog.drehtsich.tk/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
   <entry>
     <title>Texas Hold’em poker(德州扑克)</title>
-    <link href="http://blog.drehtsich.tk/2019/12/01/Texas%20Hold%E2%80%99em%20poker(%E5%BE%B7%E5%B7%9E%E6%89%91%E5%85%8B)/"/>
-    <id>http://blog.drehtsich.tk/2019/12/01/Texas Hold’em poker(德州扑克)/</id>
+    <link href="https://blog.drehtsich.tk/2019/12/01/Texas%20Hold%E2%80%99em%20poker(%E5%BE%B7%E5%B7%9E%E6%89%91%E5%85%8B)/"/>
+    <id>https://blog.drehtsich.tk/2019/12/01/Texas Hold’em poker(德州扑克)/</id>
     <published>2019-11-30T16:05:36.000Z</published>
     <updated>2019-11-30T16:23:45.425Z</updated>
     
@@ -124,17 +147,17 @@
     
     </summary>
     
-      <category term="Game" scheme="http://blog.drehtsich.tk/categories/Game/"/>
+      <category term="Game" scheme="https://blog.drehtsich.tk/categories/Game/"/>
     
     
-      <category term="传统游戏" scheme="http://blog.drehtsich.tk/tags/%E4%BC%A0%E7%BB%9F%E6%B8%B8%E6%88%8F/"/>
+      <category term="传统游戏" scheme="https://blog.drehtsich.tk/tags/%E4%BC%A0%E7%BB%9F%E6%B8%B8%E6%88%8F/"/>
     
   </entry>
   
   <entry>
     <title>关于NS破解</title>
-    <link href="http://blog.drehtsich.tk/2019/08/23/%E5%85%B3%E4%BA%8ENS%E7%A0%B4%E8%A7%A3/"/>
-    <id>http://blog.drehtsich.tk/2019/08/23/关于NS破解/</id>
+    <link href="https://blog.drehtsich.tk/2019/08/23/%E5%85%B3%E4%BA%8ENS%E7%A0%B4%E8%A7%A3/"/>
+    <id>https://blog.drehtsich.tk/2019/08/23/关于NS破解/</id>
     <published>2019-08-23T05:49:59.000Z</published>
     <updated>2019-11-30T16:10:18.309Z</updated>
     
@@ -149,17 +172,17 @@
     
     </summary>
     
-      <category term="Nintendo Switch" scheme="http://blog.drehtsich.tk/categories/Nintendo-Switch/"/>
+      <category term="Nintendo Switch" scheme="https://blog.drehtsich.tk/categories/Nintendo-Switch/"/>
     
     
-      <category term="破解" scheme="http://blog.drehtsich.tk/tags/%E7%A0%B4%E8%A7%A3/"/>
+      <category term="破解" scheme="https://blog.drehtsich.tk/tags/%E7%A0%B4%E8%A7%A3/"/>
     
   </entry>
   
   <entry>
     <title>塔罗牌阵汇总</title>
-    <link href="http://blog.drehtsich.tk/2019/07/25/%E5%A1%94%E7%BD%97%E7%89%8C%E9%98%B5%E6%B1%87%E6%80%BB/"/>
-    <id>http://blog.drehtsich.tk/2019/07/25/塔罗牌阵汇总/</id>
+    <link href="https://blog.drehtsich.tk/2019/07/25/%E5%A1%94%E7%BD%97%E7%89%8C%E9%98%B5%E6%B1%87%E6%80%BB/"/>
+    <id>https://blog.drehtsich.tk/2019/07/25/塔罗牌阵汇总/</id>
     <published>2019-07-25T07:11:36.000Z</published>
     <updated>2019-07-25T09:26:50.727Z</updated>
     
@@ -172,17 +195,17 @@
     
     </summary>
     
-      <category term="塔罗牌" scheme="http://blog.drehtsich.tk/categories/%E5%A1%94%E7%BD%97%E7%89%8C/"/>
+      <category term="塔罗牌" scheme="https://blog.drehtsich.tk/categories/%E5%A1%94%E7%BD%97%E7%89%8C/"/>
     
     
-      <category term="tarot" scheme="http://blog.drehtsich.tk/tags/tarot/"/>
+      <category term="tarot" scheme="https://blog.drehtsich.tk/tags/tarot/"/>
     
   </entry>
   
   <entry>
     <title>汇编指令和寄存器</title>
-    <link href="http://blog.drehtsich.tk/2019/07/18/%E6%B1%87%E7%BC%96%E6%8C%87%E4%BB%A4%E5%92%8C%E5%AF%84%E5%AD%98%E5%99%A8/"/>
-    <id>http://blog.drehtsich.tk/2019/07/18/汇编指令和寄存器/</id>
+    <link href="https://blog.drehtsich.tk/2019/07/18/%E6%B1%87%E7%BC%96%E6%8C%87%E4%BB%A4%E5%92%8C%E5%AF%84%E5%AD%98%E5%99%A8/"/>
+    <id>https://blog.drehtsich.tk/2019/07/18/汇编指令和寄存器/</id>
     <published>2019-07-18T13:00:22.000Z</published>
     <updated>2020-03-05T14:42:58.989Z</updated>
     
@@ -194,17 +217,17 @@
     
     </summary>
     
-      <category term="汇编" scheme="http://blog.drehtsich.tk/categories/%E6%B1%87%E7%BC%96/"/>
+      <category term="汇编" scheme="https://blog.drehtsich.tk/categories/%E6%B1%87%E7%BC%96/"/>
     
     
-      <category term="Assembly" scheme="http://blog.drehtsich.tk/tags/Assembly/"/>
+      <category term="Assembly" scheme="https://blog.drehtsich.tk/tags/Assembly/"/>
     
   </entry>
   
   <entry>
     <title>个人评测.Life Is Strange</title>
-    <link href="http://blog.drehtsich.tk/2019/07/05/%E4%B8%AA%E4%BA%BA%E8%AF%84%E6%B5%8B.Life%20Is%20Strange/"/>
-    <id>http://blog.drehtsich.tk/2019/07/05/个人评测.Life Is Strange/</id>
+    <link href="https://blog.drehtsich.tk/2019/07/05/%E4%B8%AA%E4%BA%BA%E8%AF%84%E6%B5%8B.Life%20Is%20Strange/"/>
+    <id>https://blog.drehtsich.tk/2019/07/05/个人评测.Life Is Strange/</id>
     <published>2019-07-05T12:05:28.000Z</published>
     <updated>2019-07-05T15:47:42.627Z</updated>
     
@@ -216,15 +239,15 @@
     
     </summary>
     
-      <category term="AVG" scheme="http://blog.drehtsich.tk/categories/AVG/"/>
+      <category term="AVG" scheme="https://blog.drehtsich.tk/categories/AVG/"/>
     
     
   </entry>
   
   <entry>
     <title>个人评测.聖エステラ学院の七人の魔女</title>
-    <link href="http://blog.drehtsich.tk/2019/07/02/%E4%B8%AA%E4%BA%BA%E8%AF%84%E6%B5%8B.%E8%81%96%E3%82%A8%E3%82%B9%E3%83%86%E3%83%A9%E5%AD%A6%E9%99%A2%E3%81%AE%E4%B8%83%E4%BA%BA%E3%81%AE%E9%AD%94%E5%A5%B3/"/>
-    <id>http://blog.drehtsich.tk/2019/07/02/个人评测.聖エステラ学院の七人の魔女/</id>
+    <link href="https://blog.drehtsich.tk/2019/07/02/%E4%B8%AA%E4%BA%BA%E8%AF%84%E6%B5%8B.%E8%81%96%E3%82%A8%E3%82%B9%E3%83%86%E3%83%A9%E5%AD%A6%E9%99%A2%E3%81%AE%E4%B8%83%E4%BA%BA%E3%81%AE%E9%AD%94%E5%A5%B3/"/>
+    <id>https://blog.drehtsich.tk/2019/07/02/个人评测.聖エステラ学院の七人の魔女/</id>
     <published>2019-07-02T12:57:05.000Z</published>
     <updated>2019-07-05T15:39:52.578Z</updated>
     
@@ -236,17 +259,17 @@
     
     </summary>
     
-      <category term="Galgame" scheme="http://blog.drehtsich.tk/categories/Galgame/"/>
+      <category term="Galgame" scheme="https://blog.drehtsich.tk/categories/Galgame/"/>
     
     
-      <category term="エロゲー" scheme="http://blog.drehtsich.tk/tags/%E3%82%A8%E3%83%AD%E3%82%B2%E3%83%BC/"/>
+      <category term="エロゲー" scheme="https://blog.drehtsich.tk/tags/%E3%82%A8%E3%83%AD%E3%82%B2%E3%83%BC/"/>
     
   </entry>
   
   <entry>
     <title>实用合集</title>
-    <link href="http://blog.drehtsich.tk/2019/06/30/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7%E5%90%88%E9%9B%86/"/>
-    <id>http://blog.drehtsich.tk/2019/06/30/实用工具合集/</id>
+    <link href="https://blog.drehtsich.tk/2019/06/30/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7%E5%90%88%E9%9B%86/"/>
+    <id>https://blog.drehtsich.tk/2019/06/30/实用工具合集/</id>
     <published>2019-06-30T15:38:20.000Z</published>
     <updated>2019-11-30T16:09:36.082Z</updated>
     
@@ -258,23 +281,23 @@
     
     </summary>
     
-      <category term="Tools" scheme="http://blog.drehtsich.tk/categories/Tools/"/>
+      <category term="Tools" scheme="https://blog.drehtsich.tk/categories/Tools/"/>
     
     
-      <category term="tool" scheme="http://blog.drehtsich.tk/tags/tool/"/>
+      <category term="tool" scheme="https://blog.drehtsich.tk/tags/tool/"/>
     
-      <category term="工具" scheme="http://blog.drehtsich.tk/tags/%E5%B7%A5%E5%85%B7/"/>
+      <category term="工具" scheme="https://blog.drehtsich.tk/tags/%E5%B7%A5%E5%85%B7/"/>
     
-      <category term="torrent" scheme="http://blog.drehtsich.tk/tags/torrent/"/>
+      <category term="torrent" scheme="https://blog.drehtsich.tk/tags/torrent/"/>
     
-      <category term="search" scheme="http://blog.drehtsich.tk/tags/search/"/>
+      <category term="search" scheme="https://blog.drehtsich.tk/tags/search/"/>
     
   </entry>
   
   <entry>
     <title>个人评测.箱庭ロジック</title>
-    <link href="http://blog.drehtsich.tk/2019/06/29/%E4%B8%AA%E4%BA%BA%E8%AF%84%E6%B5%8B.%E7%AE%B1%E5%BA%AD%E3%83%AD%E3%82%B8%E3%83%83%E3%82%AF/"/>
-    <id>http://blog.drehtsich.tk/2019/06/29/个人评测.箱庭ロジック/</id>
+    <link href="https://blog.drehtsich.tk/2019/06/29/%E4%B8%AA%E4%BA%BA%E8%AF%84%E6%B5%8B.%E7%AE%B1%E5%BA%AD%E3%83%AD%E3%82%B8%E3%83%83%E3%82%AF/"/>
+    <id>https://blog.drehtsich.tk/2019/06/29/个人评测.箱庭ロジック/</id>
     <published>2019-06-29T08:41:13.000Z</published>
     <updated>2019-07-06T13:04:25.891Z</updated>
     
@@ -287,17 +310,17 @@
     
     </summary>
     
-      <category term="Galgame" scheme="http://blog.drehtsich.tk/categories/Galgame/"/>
+      <category term="Galgame" scheme="https://blog.drehtsich.tk/categories/Galgame/"/>
     
     
-      <category term="エロゲー" scheme="http://blog.drehtsich.tk/tags/%E3%82%A8%E3%83%AD%E3%82%B2%E3%83%BC/"/>
+      <category term="エロゲー" scheme="https://blog.drehtsich.tk/tags/%E3%82%A8%E3%83%AD%E3%82%B2%E3%83%BC/"/>
     
   </entry>
   
   <entry>
     <title>kirikiri2引擎制作的gal的简单解包和封包</title>
-    <link href="http://blog.drehtsich.tk/2019/06/20/kirikiri2%E5%BC%95%E6%93%8E%E5%88%B6%E4%BD%9C%E7%9A%84gal%E7%9A%84%E7%AE%80%E5%8D%95%E8%A7%A3%E5%8C%85%E5%92%8C%E5%B0%81%E5%8C%85/"/>
-    <id>http://blog.drehtsich.tk/2019/06/20/kirikiri2引擎制作的gal的简单解包和封包/</id>
+    <link href="https://blog.drehtsich.tk/2019/06/20/kirikiri2%E5%BC%95%E6%93%8E%E5%88%B6%E4%BD%9C%E7%9A%84gal%E7%9A%84%E7%AE%80%E5%8D%95%E8%A7%A3%E5%8C%85%E5%92%8C%E5%B0%81%E5%8C%85/"/>
+    <id>https://blog.drehtsich.tk/2019/06/20/kirikiri2引擎制作的gal的简单解包和封包/</id>
     <published>2019-06-20T08:42:22.000Z</published>
     <updated>2019-06-20T09:35:13.719Z</updated>
     
@@ -311,15 +334,15 @@
     
     </summary>
     
-      <category term="Galgame" scheme="http://blog.drehtsich.tk/categories/Galgame/"/>
+      <category term="Galgame" scheme="https://blog.drehtsich.tk/categories/Galgame/"/>
     
     
   </entry>
   
   <entry>
     <title>2017-Galgame音乐整理</title>
-    <link href="http://blog.drehtsich.tk/2019/06/16/2017-Galgame%E9%9F%B3%E4%B9%90%E6%95%B4%E7%90%86/"/>
-    <id>http://blog.drehtsich.tk/2019/06/16/2017-Galgame音乐整理/</id>
+    <link href="https://blog.drehtsich.tk/2019/06/16/2017-Galgame%E9%9F%B3%E4%B9%90%E6%95%B4%E7%90%86/"/>
+    <id>https://blog.drehtsich.tk/2019/06/16/2017-Galgame音乐整理/</id>
     <published>2019-06-15T18:26:58.000Z</published>
     <updated>2020-02-21T07:38:46.868Z</updated>
     
@@ -332,21 +355,21 @@
     
     </summary>
     
-      <category term="Galgame" scheme="http://blog.drehtsich.tk/categories/Galgame/"/>
+      <category term="Galgame" scheme="https://blog.drehtsich.tk/categories/Galgame/"/>
     
     
-      <category term="エロゲー" scheme="http://blog.drehtsich.tk/tags/%E3%82%A8%E3%83%AD%E3%82%B2%E3%83%BC/"/>
+      <category term="エロゲー" scheme="https://blog.drehtsich.tk/tags/%E3%82%A8%E3%83%AD%E3%82%B2%E3%83%BC/"/>
     
-      <category term="Galgame" scheme="http://blog.drehtsich.tk/tags/Galgame/"/>
+      <category term="Galgame" scheme="https://blog.drehtsich.tk/tags/Galgame/"/>
     
-      <category term="Music" scheme="http://blog.drehtsich.tk/tags/Music/"/>
+      <category term="Music" scheme="https://blog.drehtsich.tk/tags/Music/"/>
     
   </entry>
   
   <entry>
     <title>C# 集合类(Collection Class)的使用</title>
-    <link href="http://blog.drehtsich.tk/2019/06/14/C#%20%E9%9B%86%E5%90%88%E7%B1%BB(Collection%20Class)%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
-    <id>http://blog.drehtsich.tk/2019/06/14/C# 集合类(Collection Class)的使用/</id>
+    <link href="https://blog.drehtsich.tk/2019/06/14/C#%20%E9%9B%86%E5%90%88%E7%B1%BB(Collection%20Class)%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
+    <id>https://blog.drehtsich.tk/2019/06/14/C# 集合类(Collection Class)的使用/</id>
     <published>2019-06-14T09:42:02.000Z</published>
     <updated>2019-06-18T09:47:56.920Z</updated>
     
@@ -358,19 +381,19 @@
     
     </summary>
     
-      <category term="C#" scheme="http://blog.drehtsich.tk/categories/C/"/>
+      <category term="C#" scheme="https://blog.drehtsich.tk/categories/C/"/>
     
     
-      <category term="c#" scheme="http://blog.drehtsich.tk/tags/c/"/>
+      <category term="csharp" scheme="https://blog.drehtsich.tk/tags/csharp/"/>
     
-      <category term="csharp" scheme="http://blog.drehtsich.tk/tags/csharp/"/>
+      <category term="c#" scheme="https://blog.drehtsich.tk/tags/c/"/>
     
   </entry>
   
   <entry>
     <title>C# 事件的使用方法以及补充</title>
-    <link href="http://blog.drehtsich.tk/2019/06/14/C#%20%E4%BA%8B%E4%BB%B6%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95%E4%BB%A5%E5%8F%8A%E8%A1%A5%E5%85%85/"/>
-    <id>http://blog.drehtsich.tk/2019/06/14/C# 事件的使用方法以及补充/</id>
+    <link href="https://blog.drehtsich.tk/2019/06/14/C#%20%E4%BA%8B%E4%BB%B6%E7%9A%84%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95%E4%BB%A5%E5%8F%8A%E8%A1%A5%E5%85%85/"/>
+    <id>https://blog.drehtsich.tk/2019/06/14/C# 事件的使用方法以及补充/</id>
     <published>2019-06-13T17:21:54.000Z</published>
     <updated>2019-06-18T09:47:40.749Z</updated>
     
@@ -382,19 +405,19 @@
     
     </summary>
     
-      <category term="C#" scheme="http://blog.drehtsich.tk/categories/C/"/>
+      <category term="C#" scheme="https://blog.drehtsich.tk/categories/C/"/>
     
     
-      <category term="c#" scheme="http://blog.drehtsich.tk/tags/c/"/>
+      <category term="csharp" scheme="https://blog.drehtsich.tk/tags/csharp/"/>
     
-      <category term="csharp" scheme="http://blog.drehtsich.tk/tags/csharp/"/>
+      <category term="c#" scheme="https://blog.drehtsich.tk/tags/c/"/>
     
   </entry>
   
   <entry>
     <title>明日方舟 公开招募理论 第二版</title>
-    <link href="http://blog.drehtsich.tk/2019/06/06/%E6%98%8E%E6%97%A5%E6%96%B9%E8%88%9F%20%E5%85%AC%E5%BC%80%E6%8B%9B%E5%8B%9F%E7%90%86%E8%AE%BA/"/>
-    <id>http://blog.drehtsich.tk/2019/06/06/明日方舟 公开招募理论/</id>
+    <link href="https://blog.drehtsich.tk/2019/06/06/%E6%98%8E%E6%97%A5%E6%96%B9%E8%88%9F%20%E5%85%AC%E5%BC%80%E6%8B%9B%E5%8B%9F%E7%90%86%E8%AE%BA/"/>
+    <id>https://blog.drehtsich.tk/2019/06/06/明日方舟 公开招募理论/</id>
     <published>2019-06-06T10:05:34.000Z</published>
     <updated>2019-08-23T05:58:40.769Z</updated>
     
@@ -406,19 +429,19 @@
     
     </summary>
     
-      <category term="明日方舟" scheme="http://blog.drehtsich.tk/categories/%E6%98%8E%E6%97%A5%E6%96%B9%E8%88%9F/"/>
+      <category term="明日方舟" scheme="https://blog.drehtsich.tk/categories/%E6%98%8E%E6%97%A5%E6%96%B9%E8%88%9F/"/>
     
-      <category term="手游" scheme="http://blog.drehtsich.tk/categories/%E6%98%8E%E6%97%A5%E6%96%B9%E8%88%9F/%E6%89%8B%E6%B8%B8/"/>
+      <category term="手游" scheme="https://blog.drehtsich.tk/categories/%E6%98%8E%E6%97%A5%E6%96%B9%E8%88%9F/%E6%89%8B%E6%B8%B8/"/>
     
     
-      <category term="Arknights" scheme="http://blog.drehtsich.tk/tags/Arknights/"/>
+      <category term="Arknights" scheme="https://blog.drehtsich.tk/tags/Arknights/"/>
     
   </entry>
   
   <entry>
     <title>2016-Galgame音乐整理</title>
-    <link href="http://blog.drehtsich.tk/2019/06/05/2016-Galgame%E9%9F%B3%E4%B9%90%E6%95%B4%E7%90%86/"/>
-    <id>http://blog.drehtsich.tk/2019/06/05/2016-Galgame音乐整理/</id>
+    <link href="https://blog.drehtsich.tk/2019/06/05/2016-Galgame%E9%9F%B3%E4%B9%90%E6%95%B4%E7%90%86/"/>
+    <id>https://blog.drehtsich.tk/2019/06/05/2016-Galgame音乐整理/</id>
     <published>2019-06-05T15:31:18.000Z</published>
     <updated>2019-06-15T18:38:20.209Z</updated>
     
@@ -431,21 +454,21 @@
     
     </summary>
     
-      <category term="Galgame" scheme="http://blog.drehtsich.tk/categories/Galgame/"/>
+      <category term="Galgame" scheme="https://blog.drehtsich.tk/categories/Galgame/"/>
     
     
-      <category term="エロゲー" scheme="http://blog.drehtsich.tk/tags/%E3%82%A8%E3%83%AD%E3%82%B2%E3%83%BC/"/>
+      <category term="エロゲー" scheme="https://blog.drehtsich.tk/tags/%E3%82%A8%E3%83%AD%E3%82%B2%E3%83%BC/"/>
     
-      <category term="Galgame" scheme="http://blog.drehtsich.tk/tags/Galgame/"/>
+      <category term="Galgame" scheme="https://blog.drehtsich.tk/tags/Galgame/"/>
     
-      <category term="Music" scheme="http://blog.drehtsich.tk/tags/Music/"/>
+      <category term="Music" scheme="https://blog.drehtsich.tk/tags/Music/"/>
     
   </entry>
   
   <entry>
     <title>Hexo的建博客中遇到的问题及解决办法</title>
-    <link href="http://blog.drehtsich.tk/2019/06/05/Hexo%E7%9A%84%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/"/>
-    <id>http://blog.drehtsich.tk/2019/06/05/Hexo的建博客中遇到的问题及解决办法/</id>
+    <link href="https://blog.drehtsich.tk/2019/06/05/Hexo%E7%9A%84%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/"/>
+    <id>https://blog.drehtsich.tk/2019/06/05/Hexo的建博客中遇到的问题及解决办法/</id>
     <published>2019-06-05T13:44:47.000Z</published>
     <updated>2019-06-05T23:38:25.080Z</updated>
     
@@ -459,37 +482,12 @@
     
     </summary>
     
-      <category term="Hexo的使用" scheme="http://blog.drehtsich.tk/categories/Hexo%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
+      <category term="Hexo的使用" scheme="https://blog.drehtsich.tk/categories/Hexo%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
     
     
-      <category term="hexo" scheme="http://blog.drehtsich.tk/tags/hexo/"/>
+      <category term="hexo" scheme="https://blog.drehtsich.tk/tags/hexo/"/>
     
-      <category term="next" scheme="http://blog.drehtsich.tk/tags/next/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>写作时可能用到的命令</title>
-    <link href="http://blog.drehtsich.tk/2019/06/05/%E5%86%99%E4%BD%9C%E6%97%B6%E5%8F%AF%E8%83%BD%E7%94%A8%E5%88%B0%E7%9A%84%E5%91%BD%E4%BB%A4/"/>
-    <id>http://blog.drehtsich.tk/2019/06/05/写作时可能用到的命令/</id>
-    <published>2019-06-04T17:51:25.000Z</published>
-    <updated>2019-11-30T16:26:20.476Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="引用文件夹中的资源"><a href="#引用文件夹中的资源" class="headerlink" title="引用文件夹中的资源"></a>引用文件夹中的资源</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% asset_path slug %&#125;</span><br><span class="line">&#123;% asset_img slug [title] %&#125;</span><br><span class="line">&#123;% asset_link slug [title] %&#125;</span><br></pre></td></tr></table></figure><p>slug为路径 title为说明</p><h1 id="使用以下指令限制首页显示文章摘要"><a href="#使用以下指令限制首页显示文章摘要" class="headerlink" title="使用以下指令限制首页显示文章摘要"></a>使用以下指令限制首页显示文章摘要</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- more --&gt;</span><br></pre></td></tr></table></figure><a id="more"></a><h1 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% codeblock [title] [lang:language] [url] [link text] %&#125;</span><br><span class="line">code snippet</span><br><span class="line">&#123;% endcodeblock %&#125;</span><br></pre></td></tr></table></figure><p>或者使用markdown语法 ` *3</p><h1 id="文章插入iframe"><a href="#文章插入iframe" class="headerlink" title="文章插入iframe"></a>文章插入iframe</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% iframe url [width] [height] %&#125;</span><br></pre></td></tr></table></figure><h1 id="Link"><a href="#Link" class="headerlink" title="Link"></a>Link</h1><p>在文章中插入链接，并自动给外部链接添加 target=”_blank” 属性。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% link text url [external] [title] %&#125;</span><br></pre></td></tr></table></figure><img src="/2019/06/05/写作时可能用到的命令/timg.jpg" title="This is an example image">]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;引用文件夹中的资源&quot;&gt;&lt;a href=&quot;#引用文件夹中的资源&quot; class=&quot;headerlink&quot; title=&quot;引用文件夹中的资源&quot;&gt;&lt;/a&gt;引用文件夹中的资源&lt;/h1&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;#123;% asset_path slug %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#123;% asset_img slug [title] %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#123;% asset_link slug [title] %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;slug为路径 title为说明&lt;/p&gt;
-&lt;h1 id=&quot;使用以下指令限制首页显示文章摘要&quot;&gt;&lt;a href=&quot;#使用以下指令限制首页显示文章摘要&quot; class=&quot;headerlink&quot; title=&quot;使用以下指令限制首页显示文章摘要&quot;&gt;&lt;/a&gt;使用以下指令限制首页显示文章摘要&lt;/h1&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;!-- more --&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-      <category term="Hexo的使用" scheme="http://blog.drehtsich.tk/categories/Hexo%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
-    
-    
-      <category term="usage" scheme="http://blog.drehtsich.tk/tags/usage/"/>
+      <category term="next" scheme="https://blog.drehtsich.tk/tags/next/"/>
     
   </entry>
   

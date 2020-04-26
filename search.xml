@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[学习笔记]]></title>
+    <url>%2F2020%2F04%2F26%2F%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%2F</url>
+    <content type="text"><![CDATA[C/C++指针数组指针 和 普通的类型指针的区别 123456789101112131415161718192021int arr[3][3] = &#123; &#123; 1,2,3 &#125;,&#123;4,5,6&#125;,&#123;7,8,9&#125; &#125;;//从汇编代码的角度看数组指针的执行和普通指针无异//但声明方式必须按照C的语法int* arrpoint = arr[0];int(*ap1)[3][3] = &amp;arr; //打印输出的值均为 5printf(&quot;%d %d&quot;, *(ap + 3*1 +1), ((*ap1)+1)[0][1]); //函数指针int _cdecl Plus(int a,int b)&#123; return a+b;&#125;//声明一个函数指针指向上面的函数PLusint (_cdecl *FunctionPointer)(int,int) = Plus;//指针函数被调用时按照调用约定来进行参数压栈和平衡堆栈 调用约定参数传递顺序1.从右到左依次入栈：stdcall，cdecl，thiscall，fastcall2.从左到右依次入栈：__pascal 函数内平衡堆栈(自己平衡): __stdcall, __fastcall, __thiscall函数外平衡堆栈(返回后平衡): __cdecl]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+  </entry>
+  <entry>
     <title><![CDATA[Virtual Private Network]]></title>
     <url>%2F2020%2F03%2F25%2FVirtual%20Private%20Network%2F</url>
     <content type="text"><![CDATA[简要鉴于ssr等，日益减速甚至断线情况经常发生,ss显然已经快要淘汰。 为了更好的翻墙体验，和更安全的访问，利用V2ray来伪装流量为http的访问流量比原先的ss的加密流量更难被察觉。重新部署是合乎理由的。 客户端下载Windows客户端Windows客户端 v2rayN 官网下载: https://github.com/2dust/v2rayN/releases Windows客户端3.12(本地下载): 点击下载 可使用 复制URL到剪贴板 的方法来快速设置。 Android客户端Android客户端 v2rayNG 可从谷歌商店下载 Android客户端(本地下载): 点击下载 可使用 复制URL到剪贴板 的方法来快速设置。 IOS客户端V2Ray iOS (iPhone / iPad) 客户端有Shadowrocket(小火箭)、Kitsunebi 和 Quantumult 三种，目前国区 App Store 的 iOS 客户端都下架了，所以你如果需要下载 V2Ray iOS (iPhone / iPad) 客户端，有以下 3 种解决方案： 下载 ipa 文件，利用 PP 助手 导入到手机（无需越狱）注册美区或者港区的 Apple ID，下载指定 iOS 客户端去某宝购买，之后切换 Apple ID，下载 iOS 客户端]]></content>
@@ -160,8 +168,8 @@
         <category>C#</category>
       </categories>
       <tags>
-        <tag>c#</tag>
         <tag>csharp</tag>
+        <tag>c#</tag>
       </tags>
   </entry>
   <entry>
@@ -172,8 +180,8 @@
         <category>C#</category>
       </categories>
       <tags>
-        <tag>c#</tag>
         <tag>csharp</tag>
+        <tag>c#</tag>
       </tags>
   </entry>
   <entry>
