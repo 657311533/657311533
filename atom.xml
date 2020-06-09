@@ -63,14 +63,14 @@
     <link href="https://blog.drehtsich.tk/2020/03/25/Virtual%20Private%20Network/"/>
     <id>https://blog.drehtsich.tk/2020/03/25/Virtual Private Network/</id>
     <published>2020-03-25T09:41:31.000Z</published>
-    <updated>2020-03-25T20:52:15.476Z</updated>
+    <updated>2020-06-09T09:01:11.139Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="简要"><a href="#简要" class="headerlink" title="简要"></a>简要</h1><p>鉴于ssr等，日益减速甚至断线情况经常发生,ss显然已经快要淘汰。</p><p>为了更好的翻墙体验，和更安全的访问，利用V2ray来伪装流量为http的访问流量<br>比原先的ss的加密流量更难被察觉。<br>重新部署是合乎理由的。</p><a id="more"></a><h1 id="客户端下载"><a href="#客户端下载" class="headerlink" title="客户端下载"></a>客户端下载</h1><h2 id="Windows客户端"><a href="#Windows客户端" class="headerlink" title="Windows客户端"></a>Windows客户端</h2><p>Windows客户端 v2rayN 官网下载: <a href="https://github.com/2dust/v2rayN/releases" target="_blank" rel="noopener">https://github.com/2dust/v2rayN/releases</a></p><p>Windows客户端3.12(本地下载): <a href="https://blog.drehtsich.tk/2020/03/25/Virtual%20Private%20Network/v2rayN-Core.zip">点击下载</a></p><p>可使用 复制URL到剪贴板 的方法来快速设置。</p><h2 id="Android客户端"><a href="#Android客户端" class="headerlink" title="Android客户端"></a>Android客户端</h2><p>Android客户端 v2rayNG 可从谷歌商店下载</p><p>Android客户端(本地下载): <a href="https://blog.drehtsich.tk/2020/03/25/Virtual%20Private%20Network/com.v2ray.ang.apk">点击下载</a></p><p>可使用 复制URL到剪贴板 的方法来快速设置。</p><h2 id="IOS客户端"><a href="#IOS客户端" class="headerlink" title="IOS客户端"></a>IOS客户端</h2><p>V2Ray iOS (iPhone / iPad) 客户端有<br>Shadowrocket(小火箭)、Kitsunebi 和 Quantumult 三种，<br>目前国区 App Store 的 iOS 客户端都下架了，<br>所以你如果需要下载 V2Ray iOS (iPhone / iPad) 客户端，<br>有以下 3 种解决方案：</p><p>下载 ipa 文件，利用 PP 助手 导入到手机（无需越狱）<br>注册美区或者港区的 Apple ID，下载指定 iOS 客户端<br>去某宝购买，之后切换 Apple ID，下载 iOS 客户端</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="简要"><a href="#简要" class="headerlink" title="简要"></a>简要</h1><p>重新部署了一遍梯子，更换了服务器和登高所需的网站域名，希望能够迎来更好的浏览体验</p><p>如果使用过程中出现意外，可以自行调节全局和直连。</p><a id="more"></a><h1 id="客户端下载"><a href="#客户端下载" class="headerlink" title="客户端下载"></a>客户端下载</h1><p>PC端项目地址(包括windows、MacOS、Linux平台):<br><a href="https://github.com/Trojan-Qt5/Trojan-Qt5/releases" target="_blank" rel="noopener">https://github.com/Trojan-Qt5/Trojan-Qt5/releases</a></p><p>Windows客户端: <a href="https://blog.drehtsich.cc/2020/03/25/Virtual%20Private%20Network/Trojan-Qt5-Windows.7z" target="_blank" rel="noopener">本地下载</a></p><p>安卓端项目地址:<a href="https://github.com/trojan-gfw/igniter" target="_blank" rel="noopener">https://github.com/trojan-gfw/igniter</a></p><p>安卓端: <a href="https://blog.drehtsich.cc/2020/03/25/Virtual%20Private%20Network/igniter.apk" target="_blank" rel="noopener">本地下载</a></p><p>导入粘贴板URL: trojan://qq12345678@fox.drehtsich.cc:443</p><h1 id="旧版（不用）"><a href="#旧版（不用）" class="headerlink" title="旧版（不用）"></a>旧版（不用）</h1><p>简要</p><p>鉴于ssr等，日益减速甚至断线情况经常发生,ss显然已经快要淘汰。</p><p>为了更好的翻墙体验，和更安全的访问，利用V2ray来伪装流量为http的访问流量<br>比原先的ss的加密流量更难被察觉。<br>重新部署是合乎理由的。</p><p>客户端下载</p><p>Windows客户端</p><p>Windows客户端 v2rayN 官网下载: <a href="https://github.com/2dust/v2rayN/releases" target="_blank" rel="noopener">https://github.com/2dust/v2rayN/releases</a></p><p>Windows客户端3.12(本地下载): <a href="https://blog.drehtsich.cc/2020/03/25/Virtual%20Private%20Network/v2rayN-Core.zip" target="_blank" rel="noopener">点击下载</a></p><p>可使用 复制URL到剪贴板 的方法来快速设置。</p><p>Android客户端</p><p>Android客户端 v2rayNG 可从谷歌商店下载</p><p>Android客户端(本地下载): <a href="https://blog.drehtsich.cc/2020/03/25/Virtual%20Private%20Network/com.v2ray.ang.apk" target="_blank" rel="noopener">点击下载</a></p><p>可使用 复制URL到剪贴板 的方法来快速设置。</p><p>IOS客户端</p><p>V2Ray iOS (iPhone / iPad) 客户端有<br>Shadowrocket(小火箭)、Kitsunebi 和 Quantumult 三种，<br>目前国区 App Store 的 iOS 客户端都下架了，<br>所以你如果需要下载 V2Ray iOS (iPhone / iPad) 客户端，<br>有以下 3 种解决方案：</p><p>下载 ipa 文件，利用 PP 助手 导入到手机（无需越狱）<br>注册美区或者港区的 Apple ID，下载指定 iOS 客户端<br>去某宝购买，之后切换 Apple ID，下载 iOS 客户端</p>]]></content>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;简要&quot;&gt;&lt;a href=&quot;#简要&quot; class=&quot;headerlink&quot; title=&quot;简要&quot;&gt;&lt;/a&gt;简要&lt;/h1&gt;&lt;p&gt;鉴于ssr等，日益减速甚至断线情况经常发生,ss显然已经快要淘汰。&lt;/p&gt;
-&lt;p&gt;为了更好的翻墙体验，和更安全的访问，利用V2ray来伪装流量为http的访问流量&lt;br&gt;比原先的ss的加密流量更难被察觉。&lt;br&gt;重新部署是合乎理由的。&lt;/p&gt;
+      &lt;h1 id=&quot;简要&quot;&gt;&lt;a href=&quot;#简要&quot; class=&quot;headerlink&quot; title=&quot;简要&quot;&gt;&lt;/a&gt;简要&lt;/h1&gt;&lt;p&gt;重新部署了一遍梯子，更换了服务器和登高所需的网站域名，希望能够迎来更好的浏览体验&lt;/p&gt;
+&lt;p&gt;如果使用过程中出现意外，可以自行调节全局和直连。&lt;/p&gt;
     
     </summary>
     
@@ -400,9 +400,9 @@
       <category term="C#" scheme="https://blog.drehtsich.tk/categories/C/"/>
     
     
-      <category term="csharp" scheme="https://blog.drehtsich.tk/tags/csharp/"/>
-    
       <category term="c#" scheme="https://blog.drehtsich.tk/tags/c/"/>
+    
+      <category term="csharp" scheme="https://blog.drehtsich.tk/tags/csharp/"/>
     
   </entry>
   
@@ -424,9 +424,9 @@
       <category term="C#" scheme="https://blog.drehtsich.tk/categories/C/"/>
     
     
-      <category term="csharp" scheme="https://blog.drehtsich.tk/tags/csharp/"/>
-    
       <category term="c#" scheme="https://blog.drehtsich.tk/tags/c/"/>
+    
+      <category term="csharp" scheme="https://blog.drehtsich.tk/tags/csharp/"/>
     
   </entry>
   
