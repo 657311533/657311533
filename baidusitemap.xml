@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://blog.drehtsich.cc/2020/07/27/%E4%B8%AA%E4%BA%BA%E8%AF%84%E6%B5%8B.%E3%81%BF%E3%81%AB%E3%81%8F%E3%81%84%E3%83%A2%E3%82%B8%E3%82%AB%E3%81%AE%E5%AD%90/</loc>
+    <lastmod>2020-07-30</lastmod>
+  </url>  <url>
+    <loc>https://blog.drehtsich.cc/2020/06/04/%E4%B8%AA%E4%BA%BA%E8%AF%84%E6%B5%8B.%E7%BE%8E%E5%B0%91%E5%A5%B3%E4%B8%87%E5%8D%8E%E9%95%9C%20-%E7%90%86%E4%B8%8E%E8%BF%B7%E5%AE%AB%E7%9A%84%E5%B0%91%E5%A5%B3-/</loc>
+    <lastmod>2020-07-30</lastmod>
+  </url>  <url>
     <loc>https://blog.drehtsich.cc/2020/07/08/Hexo%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%87%8D%E6%96%B0%E9%83%A8%E7%BD%B2/</loc>
     <lastmod>2020-07-07</lastmod>
   </url>  <url>
     <loc>https://blog.drehtsich.cc/2020/03/25/Virtual%20Private%20Network/</loc>
     <lastmod>2020-06-11</lastmod>
-  </url>  <url>
-    <loc>https://blog.drehtsich.cc/2020/06/04/%E4%B8%AA%E4%BA%BA%E8%AF%84%E6%B5%8B.%E7%BE%8E%E5%B0%91%E5%A5%B3%E4%B8%87%E5%8D%8E%E9%95%9C%20-%E7%90%86%E4%B8%8E%E8%BF%B7%E5%AE%AB%E7%9A%84%E5%B0%91%E5%A5%B3-/</loc>
-    <lastmod>2020-06-09</lastmod>
   </url>  <url>
     <loc>https://blog.drehtsich.cc/2019/08/23/%E5%85%B3%E4%BA%8ENS%E7%A0%B4%E8%A7%A3/</loc>
     <lastmod>2020-04-26</lastmod>
@@ -50,9 +53,6 @@
     <lastmod>2019-07-06</lastmod>
   </url>  <url>
     <loc>https://blog.drehtsich.cc/2019/07/05/%E4%B8%AA%E4%BA%BA%E8%AF%84%E6%B5%8B.Life%20Is%20Strange/</loc>
-    <lastmod>2019-07-05</lastmod>
-  </url>  <url>
-    <loc>https://blog.drehtsich.cc/2019/07/02/%E4%B8%AA%E4%BA%BA%E8%AF%84%E6%B5%8B.%E8%81%96%E3%82%A8%E3%82%B9%E3%83%86%E3%83%A9%E5%AD%A6%E9%99%A2%E3%81%AE%E4%B8%83%E4%BA%BA%E3%81%AE%E9%AD%94%E5%A5%B3/</loc>
     <lastmod>2019-07-05</lastmod>
   </url>  <url>
     <loc>https://blog.drehtsich.cc/2019/06/20/kirikiri2%E5%BC%95%E6%93%8E%E5%88%B6%E4%BD%9C%E7%9A%84gal%E7%9A%84%E7%AE%80%E5%8D%95%E8%A7%A3%E5%8C%85%E5%92%8C%E5%B0%81%E5%8C%85/</loc>
