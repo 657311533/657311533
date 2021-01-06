@@ -128,7 +128,7 @@
 <meta property="og:image" content="https://blog.drehtsich.cc/2020/03/25/Virtual%20Private%20Network/教程8.png">
 <meta property="og:image" content="https://blog.drehtsich.cc/2020/03/25/Virtual%20Private%20Network/教程6.jpg">
 <meta property="og:image" content="https://blog.drehtsich.cc/2020/03/25/Virtual%20Private%20Network/美国服务器.png">
-<meta property="og:updated_time" content="2021-01-05T09:10:55.403Z">
+<meta property="og:updated_time" content="2021-01-06T05:46:39.768Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Virtual Private Network">
 <meta name="twitter:description" content="简要跟之前的方式相比，减少了丢包，加大了带宽的流量速度，我自己测试下载速度可以到达20Mb/s。">
@@ -459,7 +459,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2021-01-05 17:10:55" itemprop="dateModified" datetime="2021-01-05T17:10:55+08:00">2021-01-05</time>
+                <time title="修改时间：2021-01-06 13:46:39" itemprop="dateModified" datetime="2021-01-06T13:46:39+08:00">2021-01-06</time>
               
             
           </span>
@@ -518,7 +518,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">2.7k</span>
+                <span title="本文字数">2.9k</span>
               
 
               
@@ -557,14 +557,17 @@
 
 
 
-<h1 id="2021年1月5日"><a href="#2021年1月5日" class="headerlink" title="2021年1月5日"></a>2021年1月5日</h1><p>跟之前的方式相比，减少了丢包，加大了带宽的流量速度，我自己测试下载速度可以到达20Mb/s。</p>
+<h1 id="2021年1月6日"><a href="#2021年1月6日" class="headerlink" title="2021年1月6日"></a>2021年1月6日</h1><p>跟之前的方式相比，减少了丢包，加大了带宽的流量速度，我自己测试下载速度可以到达20Mb/s。</p>
 <p>需要重新下载pc客户端，解压直接覆盖原文件PC客户端下载地址：<a href="https://blog.drehtsich.cc/2020/03/25/Virtual%20Private%20Network/qv2ray.rar">本地下载(GitHub)</a> <a href="https://pan.baidu.com/s/1w4AEOT7OmQrdbaD-1iRtaQ" target="_blank" rel="noopener">百度云(7777)</a></p>
 <p>客户端需要修改地方有</p>
 <img src="/2020/03/25/Virtual%20Private%20Network/教程9.png" title="教程9">
 
 <h2 id="PC端-新建节点"><a href="#PC端-新建节点" class="headerlink" title="PC端 新建节点"></a>PC端 新建节点</h2><h3 id="vless方式-理论上比速度比trojan要快"><a href="#vless方式-理论上比速度比trojan要快" class="headerlink" title="vless方式(理论上比速度比trojan要快)"></a>vless方式(理论上比速度比trojan要快)</h3><img src="/2020/03/25/Virtual%20Private%20Network/教程10.png" title="教程10">
 
+<p><a href="https://github.com/mack-a/v2ray-agent" target="_blank" rel="noopener">搭建脚本参考资料(github)</a></p>
 <h4 id="各项参数"><a href="#各项参数" class="headerlink" title="各项参数"></a>各项参数</h4><p>主机：↓根据网络选择↓(我这里是移动所以直接填104.19.41.56)，其他网络可以试一下其他选项，对流畅度影响较大，请谨慎选择</p>
+<p>-程序测试找到合适自己网络的主机: <a href="https://blog.drehtsich.cc/2020/03/25/Virtual%20Private%20Network/IP.zip">本地下载(github)</a> <a href="https://github.com/badafans/better-cloudflare-ip" target="_blank" rel="noopener">Github项目</a> </p>
+<p>(测试程序输入的数字越大，程序要运行更久，建议输入50)</p>
 <p>-智能选择: domain08.qiu4.ml</p>
 <p>-移动: 104.19.41.56（推荐）</p>
 <p>-联通: amp.cloudflare.com</p>
@@ -578,7 +581,12 @@
 <h3 id="trojan方式-理论上比速度比vless要慢"><a href="#trojan方式-理论上比速度比vless要慢" class="headerlink" title="trojan方式(理论上比速度比vless要慢)"></a>trojan方式(理论上比速度比vless要慢)</h3><p>客户端导入，名称/前缀 不用管，只填入分享链接</p>
 <p>分享链接: </p>
 <p>trojan-go://7a96b902-130c-3173-0dae-d752907994cc@104.19.41.56:443?sni=xray.drehtsich.cc&amp;type=ws&amp;host=xray.drehtsich.cc&amp;path=%2Fcustompathtws#TrojanGo-JP</p>
-<h3 id="两种方式选择其中一种就可以了"><a href="#两种方式选择其中一种就可以了" class="headerlink" title="两种方式选择其中一种就可以了"></a>两种方式选择其中一种就可以了</h3><h2 id="安卓端"><a href="#安卓端" class="headerlink" title="安卓端"></a>安卓端</h2><p>可以继续使用原来的trojan客户端: <a href="https://blog.drehtsich.cc/2020/03/25/Virtual%20Private%20Network/Igniter.apk">Igniter</a> </p>
+<h3 id="设置的优化"><a href="#设置的优化" class="headerlink" title="设置的优化"></a>设置的优化</h3><ul>
+<li>Trojan建议开启Mux【<strong>多路复用</strong>】，仅需客户端开启，服务端自适应。</li>
+<li>VMess/VLESS也可开启Mux，效果需要自己尝试。仅需客户端开启，服务端自适应。</li>
+<li>确定适合自己的主机ip程序:  <a href="https://blog.drehtsich.cc/2020/03/25/Virtual%20Private%20Network/IP.zip">本地下载(github)</a> <a href="https://github.com/badafans/better-cloudflare-ip" target="_blank" rel="noopener">Github项目</a> (上文有提到)</li>
+</ul>
+<h2 id="安卓端"><a href="#安卓端" class="headerlink" title="安卓端"></a>安卓端</h2><p>可以继续使用原来的trojan客户端: <a href="https://blog.drehtsich.cc/2020/03/25/Virtual%20Private%20Network/Igniter.apk">Igniter</a> </p>
 <p>推荐用v2rayNG(兼容trojan)(最好在谷歌商店下载): <a href="https://blog.drehtsich.cc/2020/03/25/Virtual%20Private%20Network/v2rayNG.apk">本地下载(GitHub)</a> <a href="https://pan.baidu.com/s/1k0MxuXayKZbi2HZtvhrtNw" target="_blank" rel="noopener">百度云(7777)</a></p>
 <p>如有看不懂的地方可以参考 <a href="#linshi">临时</a></p>
 <p>设置跟pc端大同小异</p>
@@ -974,7 +982,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#简要"><span class="nav-number">1.</span> <span class="nav-text">简要</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2021年1月5日"><span class="nav-number">2.</span> <span class="nav-text">2021年1月5日</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#PC端-新建节点"><span class="nav-number">2.1.</span> <span class="nav-text">PC端 新建节点</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#vless方式-理论上比速度比trojan要快"><span class="nav-number">2.1.1.</span> <span class="nav-text">vless方式(理论上比速度比trojan要快)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#各项参数"><span class="nav-number">2.1.1.1.</span> <span class="nav-text">各项参数</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#trojan方式-理论上比速度比vless要慢"><span class="nav-number">2.1.2.</span> <span class="nav-text">trojan方式(理论上比速度比vless要慢)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#两种方式选择其中一种就可以了"><span class="nav-number">2.1.3.</span> <span class="nav-text">两种方式选择其中一种就可以了</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安卓端"><span class="nav-number">2.2.</span> <span class="nav-text">安卓端</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#vless"><span class="nav-number">2.2.1.</span> <span class="nav-text">vless</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#trojan"><span class="nav-number">2.2.2.</span> <span class="nav-text">trojan</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#临时"><span class="nav-number">3.</span> <span class="nav-text">临时</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#另附美国的节点"><span class="nav-number">3.1.</span> <span class="nav-text">另附美国的节点</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#客户端下载-失效-但↓备用方案依旧可用"><span class="nav-number">4.</span> <span class="nav-text">客户端下载(失效)(但↓备用方案依旧可用)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#备用-可用"><span class="nav-number">5.</span> <span class="nav-text">备用(可用)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#旧版（废弃）"><span class="nav-number">6.</span> <span class="nav-text">旧版（废弃）</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#简要"><span class="nav-number">1.</span> <span class="nav-text">简要</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2021年1月6日"><span class="nav-number">2.</span> <span class="nav-text">2021年1月6日</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#PC端-新建节点"><span class="nav-number">2.1.</span> <span class="nav-text">PC端 新建节点</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#vless方式-理论上比速度比trojan要快"><span class="nav-number">2.1.1.</span> <span class="nav-text">vless方式(理论上比速度比trojan要快)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#各项参数"><span class="nav-number">2.1.1.1.</span> <span class="nav-text">各项参数</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#trojan方式-理论上比速度比vless要慢"><span class="nav-number">2.1.2.</span> <span class="nav-text">trojan方式(理论上比速度比vless要慢)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设置的优化"><span class="nav-number">2.1.3.</span> <span class="nav-text">设置的优化</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安卓端"><span class="nav-number">2.2.</span> <span class="nav-text">安卓端</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#vless"><span class="nav-number">2.2.1.</span> <span class="nav-text">vless</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#trojan"><span class="nav-number">2.2.2.</span> <span class="nav-text">trojan</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#临时"><span class="nav-number">3.</span> <span class="nav-text">临时</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#另附美国的节点"><span class="nav-number">3.1.</span> <span class="nav-text">另附美国的节点</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#客户端下载-失效-但↓备用方案依旧可用"><span class="nav-number">4.</span> <span class="nav-text">客户端下载(失效)(但↓备用方案依旧可用)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#备用-可用"><span class="nav-number">5.</span> <span class="nav-text">备用(可用)</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#旧版（废弃）"><span class="nav-number">6.</span> <span class="nav-text">旧版（废弃）</span></a></li></ol></div>
             
 
           </div>
