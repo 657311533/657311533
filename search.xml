@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Nginx的使用]]></title>
+    <url>%2F2021%2F01%2F13%2FNginx%E7%9A%84%E4%BD%BF%E7%94%A8%2F</url>
+    <content type="text"><![CDATA[简介Nginx是一款轻量级服务器/反向代理服务器及电子邮件（IMAP/POP3）代理服务器，在BSD-like 协议下发行。其特点是占有内存少，并发能力强，事实上nginx的并发能力在同类型的网页服务器中表现较好，中国大陆使用nginx网站用户有：百度、京东、新浪、网易、腾讯、淘宝等。 安装Linux端官方网站：http://nginx.org/en/download.html 把源码包解压在服务器上，然后 123# 编译安装./configure --prefix=路径make &amp;&amp; make install 如果不能安装则需要安装好环境，具体百度。 常用指令123456789101112nginx -v #查看版本nginx -V #详细信息# 进入nginx程序文件夹cd /usr/sbin./nginx #启动./nginx -s stop #查出nginx进程id再使用kill命令强制杀掉进程。./nginx -s quit #待nginx进程处理任务完毕进行停止。./nginx -s reload #改了配置文件后需要重启nginx#查询nginx状态ps aux | grep nginx 常用功能实现一个IP的服务器实现多个网页同域名不同端口123456789101112131415161718192021222324252627# nginx.conf配置文件server&#123; listen 80; server_name blog.drehtsich.cc; # 解析的域名 #charset koi8-r; #access_log logs/host.access.log main; location/&#123; root /var/www/html(1); #网页文件路径 index index.html index.htm; &#125;&#125;server&#123; listen 8080; server_name blog.drehtsich.cc; # 解析的域名 #charset koi8-r; #access_log logs/host.access.log main; location/&#123; root /var/www/html(2); #网页文件路径 index index.html index.htm; &#125;&#125; 不同域名同一端口12345678910111213141516171819202122232425262728# nginx.conf配置文件# 两个域名都要解析到同一个ipserver&#123; listen 80; server_name blog.drehtsich.cc; # 解析的域名 #charset koi8-r; #access_log logs/host.access.log main; location/&#123; root /var/www/html(1); #网页文件路径 index index.html index.htm; &#125;&#125;server&#123; listen 80; server_name dl.drehtsich.cc; # 解析的域名 #charset koi8-r; #access_log logs/host.access.log main; location/&#123; root /var/www/html(2); #网页文件路径 index index.html index.htm; &#125;&#125; Nginx常用模块功能文件共享功能12345678910111213141516# nginx.conf配置文件server&#123; listen 80; server_name dl.drehtsich.cc; # 解析的域名 autoindex on; #目录开启; autoindex_exact_size off; #文件大小; autoindex_localtime on; #文件修改时间(UTC) charset utf-8; #文字编码 location/&#123; root /var/www/html(2); #网页文件路径 index index.html index.htm; &#125;&#125;#修改完文件后，需要重载nginx 网页身份验证功能利用htpasswd创建密码文件，再使用nginx自带模块进行网页加密 123456789101112131415161718192021222324# centosyum install -y httpd-tools# debianapt-get install apache2-utils#使用htpasswd创建密码文件htpasswd -bc path/htpasswd.users account password # -c会覆写文件，只想新增用户密码只需-b# nginx.conf配置文件server&#123; listen 80; server_name dl.drehtsich.cc; # 解析的域名 #身份验证; auth_basic &quot;Identity Authentication&quot;; #提示语，随便填 auth_basic_user_file /path/htpasswd.users; #密码文件路径 location/&#123; root /var/www/html(2); #网页文件路径 index index.html index.htm; &#125;&#125;#修改完文件后，需要重载nginx htpasswd命令帮助12345678910111213htpasswd [-cimBdpsDv] [-C cost] passwordfile username htpasswd -b[cmBdpsDv] [-C cost] passwordfile username password htpasswd -n[imBdps] [-C cost] username htpasswd -nb[mBdps] [-C cost] username password-c 创建一个文件-b 命令行中直接输入除了账号外的密码-m 使用MD5加密(默认)-B 使用bcrypt加密(非常安全)Force bcrypt encryption of the password (very secure).-d 使用CRYPT加密-s 使用SHA加密-p 不对密码加密-D 删除特定用户]]></content>
+      <categories>
+        <category>Nginx</category>
+      </categories>
+      <tags>
+        <tag>nginx</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[G吧汉化之争]]></title>
     <url>%2F2020%2F12%2F31%2FG%E5%90%A7%E6%B1%89%E5%8C%96%E4%B9%8B%E4%BA%89%2F</url>
     <content type="text"><![CDATA[原帖地址 https://tieba.baidu.com/p/7173774173事件概括：就个人汉化质量问题，有人进行勘误并发帖指出。贴中指出了许多严重的错误(歪曲原文意思)。个人汉化者已经站出来表示接受批评了。但贴中许多人纷纷表态，出现了对立，大致分为：一，有得玩就行，不管汉化质量。二，这种汉化简直是害人。 对这种事情，我在前几年关于收费汉化组的问题已经被喷了一次。有人说得好：用爱发电”以及“免费汉化”就足以让汉化者处于道德上的不败之地。只要不是狗屁不通，大多数玩家根本不会在意翻译准不准确，你挑刺就是“你行你上”。 现在的人都不求真了，真就一群傻逼。🤮]]></content>
@@ -224,8 +235,8 @@
         <category>C#</category>
       </categories>
       <tags>
-        <tag>csharp</tag>
         <tag>c#</tag>
+        <tag>csharp</tag>
       </tags>
   </entry>
   <entry>
@@ -236,8 +247,8 @@
         <category>C#</category>
       </categories>
       <tags>
-        <tag>csharp</tag>
         <tag>c#</tag>
+        <tag>csharp</tag>
       </tags>
   </entry>
   <entry>
