@@ -1055,6 +1055,214 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://blog.drehtsich.cc/2022/12/26/NaiveProxy使用/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="_在家玩游戏">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Dreht Sich">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2022/12/26/NaiveProxy使用/" class="post-title-link" itemprop="url">NaiveProxy使用</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2022-12-26 23:28:45 / 修改时间：23:35:03" itemprop="dateCreated datePublished" datetime="2022-12-26T23:28:45+08:00">2022-12-26</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">评论数：</span>
+                <a href="/2022/12/26/NaiveProxy使用/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2022/12/26/NaiveProxy使用/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">3.7k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">7 mins.</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>旧的协议已经完蛋了，目前naiveproxy好像不错就学习一下</p>
+<h1 id="搭建"><a href="#搭建" class="headerlink" title="搭建"></a>搭建</h1><p>服务器端操作系统 ubuntu22.04 amd64</p>
+<h3 id="编译安装caddy-naive："><a href="#编译安装caddy-naive：" class="headerlink" title="编译安装caddy+naive："></a>编译安装caddy+naive：</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">apt install golang-go</span><br><span class="line">go install github.com/caddyserver/xcaddy/cmd/xcaddy@latest</span><br><span class="line">~/go/bin/xcaddy build --with github.com/caddyserver/forwardproxy@caddy2=github.com/klzgrad/forwa</span><br></pre></td></tr></table></figure>
+
+<h3 id="Caddyfile配置："><a href="#Caddyfile配置：" class="headerlink" title="Caddyfile配置："></a>Caddyfile配置：</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">:443, naive.buliang0.tk #你的域名</span><br><span class="line">tls example@example.com #你的邮箱</span><br><span class="line">route &#123;</span><br><span class="line"> forward_proxy &#123;</span><br><span class="line">   basic_auth user pass #用户名和密码</span><br><span class="line">   hide_ip</span><br><span class="line">   hide_via</span><br><span class="line">   probe_resistance</span><br><span class="line">  &#125;</span><br><span class="line"> #支持多用户</span><br><span class="line"> forward_proxy &#123;</span><br><span class="line">   basic_auth user2 pass2 #用户名和密码</span><br><span class="line">   hide_ip</span><br><span class="line">   hide_via</span><br><span class="line">   probe_resistance</span><br><span class="line">  &#125;</span><br><span class="line"> reverse_proxy  https://demo.cloudreve.org  &#123; #伪装网址</span><br><span class="line">   header_up  Host  &#123;upstream_hostport&#125;</span><br><span class="line">   header_up  X-Forwarded-Host  &#123;host&#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="caddy常用指令："><a href="#caddy常用指令：" class="headerlink" title="caddy常用指令："></a>caddy常用指令：</h3><p>前台运行caddy：<code>./caddy run</code><br>后台运行caddy：<code>./caddy start</code><br>停止caddy：<code>./caddy stop</code><br>重载配置：<code>./caddy reload</code></p>
+<p>caddy配置守护进程（开机自启）：<a href="https://bulianglin.com/g/aHR0cHM6Ly9naXRodWIuY29tL2tsemdyYWQvbmFpdmVwcm94eS93aWtpL1J1bi1DYWRkeS1hcy1hLWRhZW1vbg" target="_blank" rel="noopener">https://github.com/klzgrad/naiveproxy/wiki/Run-Caddy-as-a-daemon</a></p>
+<h3 id="自定义端口："><a href="#自定义端口：" class="headerlink" title="自定义端口："></a>自定义端口：</h3><blockquote>
+<p>naive如果要用自定义端口，需要使用json的配置方式，新手可以直接跳过</p>
+</blockquote>
+<p>启动方式：<code>./caddy start --config config.json</code></p>
+<p><strong>config.json内容：</strong></p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br></pre></td><td class="code"><pre><span class="line">//需删除注释内容caddy才能加载</span><br><span class="line">&#123;</span><br><span class="line"> <span class="attr">"apps"</span>: &#123;</span><br><span class="line">   <span class="attr">"http"</span>: &#123;</span><br><span class="line">     <span class="attr">"servers"</span>: &#123;</span><br><span class="line">       <span class="attr">"srv0"</span>: &#123;</span><br><span class="line">         <span class="attr">"listen"</span>: [</span><br><span class="line">           <span class="string">":4431"</span>   //监听端口</span><br><span class="line">         ],</span><br><span class="line">         <span class="attr">"routes"</span>: [</span><br><span class="line">           &#123;</span><br><span class="line">             <span class="attr">"handle"</span>: [</span><br><span class="line">               &#123;</span><br><span class="line">                 "auth_user_deprecated": "user",   //用户名</span><br><span class="line">                 "auth_pass_deprecated": "pass",  //密码</span><br><span class="line">                 "handler": "forward_proxy",</span><br><span class="line">                 "hide_ip": true,</span><br><span class="line">                 "hide_via": true,</span><br><span class="line">                 "probe_resistance": &#123;&#125;</span><br><span class="line">               &#125;</span><br><span class="line">             ]</span><br><span class="line">           &#125;,</span><br><span class="line">           &#123;</span><br><span class="line">             <span class="attr">"handle"</span>: [</span><br><span class="line">               &#123;</span><br><span class="line">                 <span class="attr">"handler"</span>: <span class="string">"reverse_proxy"</span>,</span><br><span class="line">                 <span class="attr">"headers"</span>: &#123;</span><br><span class="line">                   <span class="attr">"request"</span>: &#123;</span><br><span class="line">                     <span class="attr">"set"</span>: &#123;</span><br><span class="line">                       <span class="attr">"Host"</span>: [</span><br><span class="line">                         <span class="string">"&#123;http.reverse_proxy.upstream.hostport&#125;"</span></span><br><span class="line">                       ],</span><br><span class="line">                       <span class="attr">"X-Forwarded-Host"</span>: [</span><br><span class="line">                         <span class="string">"&#123;http.request.host&#125;"</span></span><br><span class="line">                       ]</span><br><span class="line">                     &#125;</span><br><span class="line">                   &#125;</span><br><span class="line">                 &#125;,</span><br><span class="line">                 <span class="attr">"transport"</span>: &#123;</span><br><span class="line">                   <span class="attr">"protocol"</span>: <span class="string">"http"</span>,</span><br><span class="line">                   <span class="attr">"tls"</span>: &#123;&#125;</span><br><span class="line">                 &#125;,</span><br><span class="line">                 <span class="attr">"upstreams"</span>: [</span><br><span class="line">                   &#123;</span><br><span class="line">                     <span class="attr">"dial"</span>: <span class="string">"demo.cloudreve.org:443"</span>  //伪装网址</span><br><span class="line">                   &#125;</span><br><span class="line">                 ]</span><br><span class="line">               &#125;</span><br><span class="line">             ]</span><br><span class="line">           &#125;</span><br><span class="line">         ],</span><br><span class="line">         "tls_connection_policies": [</span><br><span class="line">           &#123;</span><br><span class="line">             <span class="attr">"match"</span>: &#123;</span><br><span class="line">               <span class="attr">"sni"</span>: [</span><br><span class="line">                 <span class="string">"naive.buliang0.tk"</span>  //域名</span><br><span class="line">               ]</span><br><span class="line">             &#125;,</span><br><span class="line">             <span class="attr">"certificate_selection"</span>: &#123;</span><br><span class="line">               <span class="attr">"any_tag"</span>: [</span><br><span class="line">                 <span class="string">"cert0"</span></span><br><span class="line">               ]</span><br><span class="line">             &#125;</span><br><span class="line">           &#125;</span><br><span class="line">         ],</span><br><span class="line">         "automatic_https": &#123;</span><br><span class="line">           "disable": true</span><br><span class="line">         &#125;</span><br><span class="line">       &#125;</span><br><span class="line">     &#125;</span><br><span class="line">   &#125;,</span><br><span class="line">   "tls": &#123;</span><br><span class="line">     "certificates": &#123;</span><br><span class="line">       "load_files": [</span><br><span class="line">         &#123;</span><br><span class="line">           "certificate": "/root/a.crt",  //公钥路径</span><br><span class="line">           "key": "/root/a.key",   //私钥路径</span><br><span class="line">           "tags": [</span><br><span class="line">             <span class="string">"cert0"</span></span><br><span class="line">           ]</span><br><span class="line">         &#125;</span><br><span class="line">       ]</span><br><span class="line">     &#125;</span><br><span class="line">   &#125;</span><br><span class="line"> &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="客户端配置"><a href="#客户端配置" class="headerlink" title="客户端配置"></a>客户端配置</h2><p>naive客户端：<a href="https://bulianglin.com/g/aHR0cHM6Ly9naXRodWIuY29tL2tsemdyYWQvbmFpdmVwcm94eS9yZWxlYXNlcy9sYXRlc3Q" target="_blank" rel="noopener">https://github.com/klzgrad/naiveproxy/releases/latest</a></p>
+<p>客户端配置：</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">"listen"</span>: <span class="string">"socks://127.0.0.1:1080"</span>,</span><br><span class="line">  <span class="attr">"proxy"</span>: <span class="string">"https://user:pass@example.com"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="搭建过程中遇到的问题"><a href="#搭建过程中遇到的问题" class="headerlink" title="搭建过程中遇到的问题"></a>搭建过程中遇到的问题</h2><p>443端口被封的情况下，就只能自定义端口，需要申请证书，使用x-ui里面的acme.sh来申请，然后通过命令来导出证书到指定目录。代码如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">~/.acme.sh/acme.sh --installcert -d mydomain.com --key-file /root/private.key --fullchain-file /root/cert.crt</span><br></pre></td></tr></table></figure>
+
+<p>客户端配置方面</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &quot;listen&quot;: &quot;socks://127.0.0.1:1080&quot;,</span><br><span class="line">  &quot;proxy&quot;: &quot;https://user:pass@example.com:4431&quot;,</span><br><span class="line">  &quot;log&quot;: &quot;&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://blog.drehtsich.cc/2022/05/13/ClashForWin的配置&甲骨文云的设置/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -2367,229 +2575,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://blog.drehtsich.cc/2021/03/29/Y染色体单倍群/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="_在家玩游戏">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/uploads/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Dreht Sich">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2021/03/29/Y染色体单倍群/" class="post-title-link" itemprop="url">Y染色体单倍群</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2021-03-29 16:17:40" itemprop="dateCreated datePublished" datetime="2021-03-29T16:17:40+08:00">2021-03-29</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2021-03-30 04:07:03" itemprop="dateModified" datetime="2021-03-30T04:07:03+08:00">2021-03-30</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/生物遗传/" itemprop="url" rel="index"><span itemprop="name">生物遗传</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">评论数：</span>
-                <a href="/2021/03/29/Y染色体单倍群/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2021/03/29/Y染色体单倍群/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-symbolscount">
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">本文字数：</span>
-                
-                <span title="本文字数">18k</span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Reading time &asymp;</span>
-                
-                <span title="Reading time">32 mins.</span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>在人类遗传学中，人类Y染色体DNA单倍群是由男性Y染色体的DNA的非重组部分中的发生突变的单倍群。许多人在一个单倍群中有着相似短串联重复序列（STRs）数量还存在着称为单核苷酸多态性（SNPs）的核苷酸突变。</p>
-<p>人类Y染色体每世代大约会有两个突变。Y-DNA单倍群是Y染色体进化系统树的主要分支，每个单倍群共有数百甚至数千个独特的突变。</p>
-<p>在Y染色体最近缘的共同祖先（Y-MRCA，俗称Y染色体亚当）是最早的共同祖先（MRCA），他是目前所有现代人类的父系起源。</p>
-<p>据估计，Y染色体亚当大约生活在236,000年前的非洲。通过研究遗传瓶颈，大多数欧亚男人（来自非洲以外地区的男人）都是一个来自69,000年前的男人的后裔。其他主要遗传瓶颈发生在大约50,000和5,000年前，后来大多数(欧亚/非洲以外)男人的祖先可以追溯到50,000年前的四位祖先。</p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2021/03/29/Y染色体单倍群/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -2638,7 +2623,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">33</span>
+                    <span class="site-state-item-count">34</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -2883,7 +2868,7 @@
     
       <span class="post-meta-item-text">Symbols count total：</span>
     
-    <span title="Symbols count total">203k</span>
+    <span title="Symbols count total">207k</span>
   
 
   
@@ -2894,7 +2879,7 @@
     
       <span class="post-meta-item-text">Reading time total &asymp;</span>
     
-    <span title="Reading time total">6:09</span>
+    <span title="Reading time total">6:16</span>
   
 </div>
 
